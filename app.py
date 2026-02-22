@@ -256,7 +256,19 @@ fig_revenue = px.line(
 )
 
 c1.plotly_chart(fig_revenue, use_container_width=True)
-c2.plotly_chart(px.line(time, x="Date", y="return_rate", title="Atgriezumu īpatsvars (%) pa nedēļām"), use_container_width=True)
+fig_returns = px.line(
+    time,
+    x="Date",
+    y="return_rate",
+    title="Atgriezumu īpatsvars (%) pa nedēļām",
+    hover_data={
+        "return_rate": ":.2f",
+        "orders": True,
+        "returns": True
+    }
+)
+
+c2.plotly_chart(fig_returns, use_container_width=True)
 
 st.subheader("Segmentācija")
 seg = (f.groupby("Product_Category_clean")
