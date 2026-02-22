@@ -47,9 +47,9 @@ def load_data(orders_path: str, returns_path: str | None = None) -> pd.DataFrame
 
 st.title("NordTech – Sales, Returns & Support Signals")
 
-DATA_PATH = "orders_raw.csv"
-RETURNS_PATH = "returns_messy.xlsx"
-df = load_data(DATA_PATH, RETURNS_PATH)
+DATA_PATH = "enriched_data.csv"
+df = pd.read_csv(DATA_PATH)
+df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
 
 st.write("ROWS in orders:", len(df))
 st.write("Total Revenue RAW:", df["Revenue"].sum())
