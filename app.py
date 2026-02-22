@@ -45,8 +45,15 @@ def load_data(orders_path: str, returns_path: str | None = None) -> pd.DataFrame
         ret.columns = [c.strip() for c in ret.columns]
 
         # Meklē kopīgo atslēgu, ar ko savienot (biežākie varianti)
-        order_key_candidates = ["Order_ID", "OrderID", "order_id", "Order Id", "OrderId"]
-        ret_key_candidates   = ["Order_ID", "OrderID", "order_id", "Order Id", "OrderId"]
+order_key_candidates = [
+    "Transaction_ID", "TransactionID", "transaction_id",
+    "Order_ID", "OrderID", "order_id", "Order Id", "OrderId"
+]
+
+ret_key_candidates = [
+    "Transaction_ID", "TransactionID", "transaction_id",
+    "Order_ID", "OrderID", "order_id", "Order Id", "OrderId"
+]
 
         orders_key = next((c for c in order_key_candidates if c in df.columns), None)
         ret_key    = next((c for c in ret_key_candidates if c in ret.columns), None)
@@ -66,11 +73,47 @@ DATA_PATH = "orders_raw.csv"
 RETURNS_PATH = "returns_messy.xlsx"
 df = load_data(DATA_PATH, RETURNS_PATH)
 
-st.write("Rows:", len(df))
-st.write("Columns:", df.columns.tolist())
+TICKETS_PATH = "customer_tickets.jsonl"
 
-st.write("has_return True count:", int(df["has_return"].sum()) if "has_return" in df.columns else "NO has_return col")
-st.write("ticket_count sum:", int(df["ticket_count"].sum()) if "ticket_count" in df.columns else "NO ticket_count col")
+@st.cache_data
+def load_tickets(path: str) -> pd.DataFrame:
+    t = pd.read_json(path, lines=True)
+    t.columns = [c.strip() for c in t.columns]
+    return t
+
+try:
+    tickets = load_tickets(TICKETS_PATH)
+
+    # Meklē atslēgu
+    key_candidates = [
+        "Transaction_ID", "TransactionID", "transaction_id",
+        "Order_ID", "OrderID", "order_id"
+    ]
+
+    orders_key = next((k for k in key_candidates if k in df.columns), None)
+    tickets_key = next((k for k in key_candidates if k in tickets.columns), None)
+
+    if orders_key and tickets_key:
+        t_agg = (
+            tickets.groupby(tickets_key)
+                   .agg(
+                       ticket_count=(tickets_key, "size"),
+                       top_topic=("Topic", lambda s: s.value_counts().index[0] if len(s) else "n/a")
+                   )
+                   .reset_index()
+                   .rename(columns={tickets_key: orders_key})
+        )
+
+        df = df.merge(t_agg, on=orders_key, how="left")
+        df["ticket_count"] = df["ticket_count"].fillna(0).astype(int)
+        df["top_topic"] = df["top_topic"].fillna("no_tickets")
+    else:
+        df["ticket_count"] = 0
+        df["top_topic"] = "no_tickets"
+
+except Exception:
+    df["ticket_count"] = 0
+    df["top_topic"] = "no_tickets"
 
 # Sidebar filtri
 st.sidebar.header("Filtri")
