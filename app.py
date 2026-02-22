@@ -21,7 +21,7 @@ def load_data(path: str) -> pd.DataFrame:
 
 st.title("NordTech – Sales, Returns & Support Signals")
 
-DATA_PATH = "/content/enriched_data.csv"
+DATA_PATH = "orders_raw.csv"
 df = load_data(DATA_PATH)
 
 # Sidebar filtri
