@@ -51,6 +51,9 @@ DATA_PATH = "orders_raw.csv"
 RETURNS_PATH = "returns_messy.xlsx"
 df = load_data(DATA_PATH, RETURNS_PATH)
 
+st.write("ROWS in orders:", len(df))
+st.write("Total Revenue RAW:", df["Revenue"].sum())
+
 TICKETS_PATH = "customer_tickets.jsonl"
 
 @st.cache_data
