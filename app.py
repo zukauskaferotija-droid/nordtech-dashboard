@@ -41,22 +41,21 @@ def load_data(orders_path: str, returns_path: str | None = None) -> pd.DataFrame
         return df
 
     try:
-        ret = pd.read_excel(returns_path)
-        ret.columns = [c.strip() for c in ret.columns]
+    ret = pd.read_excel(returns_path)
+    ret.columns = [c.strip() for c in ret.columns]
 
-        # Meklē kopīgo atslēgu, ar ko savienot (biežākie varianti)
-order_key_candidates = [
-    "Transaction_ID", "TransactionID", "transaction_id",
-    "Order_ID", "OrderID", "order_id", "Order Id", "OrderId"
-]
+    order_key_candidates = [
+        "Transaction_ID", "TransactionID", "transaction_id",
+        "Order_ID", "OrderID", "order_id", "Order Id", "OrderId"
+    ]
 
-ret_key_candidates = [
-    "Transaction_ID", "TransactionID", "transaction_id",
-    "Order_ID", "OrderID", "order_id", "Order Id", "OrderId"
-]
+    ret_key_candidates = [
+        "Transaction_ID", "TransactionID", "transaction_id",
+        "Order_ID", "OrderID", "order_id", "Order Id", "OrderId"
+    ]
 
-        orders_key = next((c for c in order_key_candidates if c in df.columns), None)
-        ret_key    = next((c for c in ret_key_candidates if c in ret.columns), None)
+    orders_key = next((c for c in order_key_candidates if c in df.columns), None)
+    ret_key = next((c for c in ret_key_candidates if c in ret.columns), None)
 
         if orders_key and ret_key:
             returned_orders = set(ret[ret_key].dropna().astype(str))
