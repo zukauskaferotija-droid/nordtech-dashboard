@@ -205,10 +205,17 @@ returns_count = int(f["has_return"].sum())
 tickets_total = int(f["ticket_count"].sum())
 
 k1, k2, k3, k4 = st.columns(4)
-k1.metric("Kopējie ieņēmumi", f"{total_revenue:,.2f}")
-k2.metric("Atgriezumu %", f"{return_rate:.2f}%")
-k3.metric("Atgriezumu skaits", f"{returns_count}")
-k4.metric("Sūdzību skaits", int(tickets_total))
+k1.metric("💰 Kopējie ieņēmumi", f"{total_revenue:,.0f} €")
+k2.metric("📦 Atgriezumu īpatsvars", f"{return_rate:.2f}%")
+k3.metric("↩️ Atgriezumu skaits", f"{returns_count:,}")
+k4.metric("🎧 Klientu sūdzības", f"{tickets_total:,}")
+
+if return_rate > 7:
+    st.warning("⚠️ Atgriezumu līmenis pārsniedz 7% — nepieciešama produktu kvalitātes analīze.")
+elif return_rate > 4:
+    st.info("ℹ️ Atgriezumu līmenis virs 4% — ieteicams monitorēt.")
+else:
+    st.success("✅ Atgriezumu līmenis kontrolēts.")
 
 st.divider()
 
