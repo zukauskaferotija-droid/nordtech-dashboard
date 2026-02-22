@@ -32,10 +32,10 @@ def load_data(orders_path: str, returns_path: str | None = None) -> pd.DataFrame
         ret.columns = [c.strip() for c in ret.columns]
 
         # DEBUG (4 atstarpes priekšā!)
-    st.write("RETURNS columns:", ret.columns.tolist())
-    st.write("ORDERS columns:", df.columns.tolist())
-    st.write("RETURNS sample:")
-    st.write(ret.head(3))
+        st.write("RETURNS columns:", ret.columns.tolist())
+        st.write("ORDERS columns:", df.columns.tolist())
+        st.write("RETURNS sample:")
+        st.write(ret.head(3))
 
         order_key_candidates = [
             "Transaction_ID", "TransactionID", "transaction_id",
