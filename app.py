@@ -199,6 +199,27 @@ if "Transaction_ID" not in f.columns:
     f["Transaction_ID"] = np.arange(len(f))
 # --- END SAFETY PATCH ---    
 
+# ===== Premium: Monthly agregācija =====
+monthly = (
+    f.dropna(subset=["Date"])
+     .assign(month=f["Date"].dt.to_period("M").dt.to_timestamp())
+     .groupby("month")
+     .agg(
+         revenue=("Revenue", "sum"),
+         orders=("Transaction_ID", "count"),
+         returns=("has_return", "sum"),
+         tickets=("ticket_count", "sum"),
+     )
+     .reset_index()
+)
+
+monthly["return_rate"] = np.where(monthly["orders"] > 0, monthly["returns"] / monthly["orders"] * 100, 0)
+
+# MoM (percent change)
+monthly = monthly.sort_values("month")
+monthly["revenue_mom_pct"] = monthly["revenue"].pct_change() * 100
+monthly["return_rate_mom_pct"] = monthly["return_rate"].pct_change() * 100
+
 # KPI
 total_revenue = f["Revenue"].sum()
 return_rate = (f["has_return"].mean() * 100) if len(f) else 0
