@@ -107,7 +107,7 @@ if selected_payments:
 total_revenue = f["Revenue"].sum()
 return_rate = (f["has_return"].mean() * 100) if len(f) else 0
 returns_count = int(f["has_return"].sum())
-tickets_total = int(f["ticket_count"].sum())
+tickets_total = int(f.get("ticket_count", pd.Series(0, index=f.index)).sum())
 
 k1, k2, k3, k4 = st.columns(4)
 k1.metric("Kopējie ieņēmumi", f"{total_revenue:,.2f}")
