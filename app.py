@@ -73,7 +73,16 @@ df["ticket_count"] = pd.to_numeric(df["ticket_count"], errors="coerce").fillna(0
 # Sidebar filtri
 st.sidebar.header("Filtri")
 
-all_categories = sorted(df["Product_Category"].dropna().unique().tolist())
+all_categories = sorted(
+    df["Product_Category"]
+      .astype(str)
+      .str.strip()
+      .str.replace(r"\s+", " ", regex=True)
+      .dropna()
+      .unique()
+      .tolist()
+)
+
 selected_categories = st.sidebar.multiselect(
     "Produktu kategorija",
     options=all_categories,
