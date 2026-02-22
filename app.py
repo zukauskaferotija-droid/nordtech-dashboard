@@ -51,8 +51,6 @@ DATA_PATH = "orders_raw.csv"
 RETURNS_PATH = "returns_messy.xlsx"
 df = load_data(DATA_PATH, RETURNS_PATH)
 
-st.write("Tickets rows:", len(pd.read_json("customer_tickets.jsonl", lines=True)))
-
 TICKETS_PATH = "customer_tickets.jsonl"
 
 @st.cache_data
@@ -67,22 +65,38 @@ try:
     # Meklē atslēgu
     key_candidates = [
         "Transaction_ID", "TransactionID", "transaction_id",
-        "Order_ID", "OrderID", "order_id"
+        "Order_ID", "OrderID", "order_id",
+        "Customer_ID", "CustomerID", "customer_id"
     ]
 
     orders_key = next((k for k in key_candidates if k in df.columns), None)
     tickets_key = next((k for k in key_candidates if k in tickets.columns), None)
 
     if orders_key and tickets_key:
-        t_agg = (
-            tickets.groupby(tickets_key)
-                   .agg(
-                       ticket_count=(tickets_key, "size"),
-                       top_topic=("Topic", lambda s: s.value_counts().index[0] if len(s) else "n/a")
-                   )
-                   .reset_index()
-                   .rename(columns={tickets_key: orders_key})
+        topic_col = next(
+            (c for c in ["Topic","topic","Category","category","Reason","reason","Issue","issue","Issue_Type","issue_type"]
+             if c in tickets.columns),
+             None
         )
+
+        if topic_col:
+            t_agg = (
+                tickets.groupby(tickets_key)
+                       .agg(
+                           ticket_count=(tickets_key, "size"),
+                           top_topic=(topic_col, lambda s: s.value_counts().index[0] if len(s) else "n/a")
+                       )
+                       .reset_index()
+                       .rename(columns={tickets_key: orders_key})
+            )
+        else:
+            t_agg = (
+                tickets.groupby(tickets_key)
+                       .agg(ticket_count=(tickets_key, "size"))
+                       .reset_index()
+                       .rename(columns={tickets_key: orders_key})
+            )
+            t_agg["top_topic"] = "no_topic"
 
         df = df.merge(t_agg, on=orders_key, how="left")
         df["ticket_count"] = df["ticket_count"].fillna(0).astype(int)
