@@ -64,6 +64,13 @@ df["Product_Category_clean"] = (
       .str.replace(r"\s+", " ", regex=True)
 )
 
+df["Product_Name_clean"] = (
+    df["Product_Name"]
+      .astype(str)
+      .str.strip()
+      .str.replace(r"\s+", " ", regex=True)
+)
+
 # Datums
 df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
 
@@ -81,7 +88,7 @@ df["ticket_count"] = pd.to_numeric(df["ticket_count"], errors="coerce").fillna(0
 st.sidebar.header("Filtri")
 
 all_categories = sorted(
-    df["Product_Category"]
+    df["Product_Category_clean"]
       .astype(str)
       .str.strip()
       .str.replace(r"\s+", " ", regex=True)
@@ -100,8 +107,8 @@ selected_categories = st.sidebar.multiselect(
 # --- Product Name atkarīgs no kategorijas ---
 if selected_categories:
     available_products = (
-        df[df["Product_Category"].isin(selected_categories)]
-        ["Product_Name"]
+        df[df["Product_Category_clean"].isin(selected_categories)]
+        ["Product_Name_clean"]
         .dropna()
         .unique()
         .tolist()
@@ -110,13 +117,13 @@ if selected_categories:
 # --- Product Name atkarīgs no kategorijas ---
 if selected_categories:
     available_products = (
-        df[df["Product_Category"].isin(selected_categories)]["Product_Name"]
+        df[df["Product_Category_clean"].isin(selected_categories)]["Product_Name"]
         .dropna()
         .unique()
         .tolist()
     )
 else:
-    available_products = df["Product_Name"].dropna().unique().tolist()
+    available_products = df["Product_Name_clean"].dropna().unique().tolist()
 
 available_products = sorted(available_products)
 
@@ -243,7 +250,7 @@ st.plotly_chart(
 )
 
 st.subheader("Top problem cases (pēc atgriezumiem)")
-top_cases = (f.groupby(["Product_Category","Product_Name"])
+top_cases = (f.groupby(["Product_Category_clean","Product_Name_clean"])
               .agg(
                   orders=("Transaction_ID","count"),
                   returns=("has_return","sum"),
