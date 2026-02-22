@@ -374,6 +374,12 @@ top_cases = (f.groupby(["Product_Category_clean","Product_Name_clean"])
               .sort_values(["returns","return_rate"], ascending=False)
               .head(15))
 
+# Risk ranking pievienošana
+top_cases["Risk_Level"] = np.where(
+    top_cases["return_rate"] > 10, "🔴 High",
+    np.where(top_cases["return_rate"] > 5, "🟡 Medium", "🟢 Low")
+)
+
 st.dataframe(top_cases, use_container_width=True)
 
 st.caption("Padoms: pamēģini atlasīt tikai 'Smart Home' un šaurāku periodu, lai redzētu, vai problēmas koncentrējas laikā.")
