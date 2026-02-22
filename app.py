@@ -31,23 +31,20 @@ def load_data(orders_path: str, returns_path: str | None = None) -> pd.DataFrame
         ret = pd.read_excel(returns_path)
         ret.columns = [c.strip() for c in ret.columns]
 
+        # --- RETURNS LINKING (precīzi pēc tavām kolonnām) ---
+        orders_key = "Transaction_ID"
+        ret_key = "Original_Tx_ID"
+
+        if orders_key in df.columns and ret_key in ret.columns:
+            returned_ids = set(ret[ret_key].dropna().astype(str).str.strip())
+            df["has_return"] = df[orders_key].astype(str).str.strip().isin(returned_ids)
+        # --- /RETURNS LINKING ---
+
         # DEBUG (4 atstarpes priekšā!)
         st.write("RETURNS columns:", ret.columns.tolist())
         st.write("ORDERS columns:", df.columns.tolist())
         st.write("RETURNS sample:")
         st.write(ret.head(3))
-
-        order_key_candidates = [
-            "Transaction_ID", "TransactionID", "transaction_id",
-            "Order_ID", "OrderID", "order_id"
-        ]
-
-        orders_key = next((c for c in order_key_candidates if c in df.columns), None)
-        ret_key = next((c for c in order_key_candidates if c in ret.columns), None)
-
-        if orders_key and ret_key:
-            returned_ids = set(ret[ret_key].dropna().astype(str))
-            df["has_return"] = df[orders_key].astype(str).isin(returned_ids)
 
         return df
 
