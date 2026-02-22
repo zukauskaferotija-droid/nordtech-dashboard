@@ -7,6 +7,24 @@ st.set_page_config(page_title="NordTech Dashboard", layout="wide")
 st.caption("Interaktīva pārdošanas, atgriezumu un klientu kvalitātes analīze (Streamlit + Python)")
 st.markdown("---")
 
+px.defaults.template = "plotly_white"
+
+color_revenue = "#1f77b4"
+color_returns = "#d62728"
+color_tickets = "#ff7f0e"
+
+px.line(
+    time,
+    x="Date",
+    y="revenue",
+    hover_data={
+        "revenue": ":,.0f",
+        "orders": True,
+        "returns": True,
+        "tickets": True
+    }
+)
+
 @st.cache_data
 def load_data(orders_path: str, returns_path: str | None = None) -> pd.DataFrame:
     df = pd.read_csv(orders_path)
