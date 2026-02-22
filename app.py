@@ -77,7 +77,8 @@ all_categories = sorted(df["Product_Category"].dropna().unique().tolist())
 selected_categories = st.sidebar.multiselect(
     "Produktu kategorija",
     options=all_categories,
-    default=all_categories
+    default=all_categories,
+    key="cat_filter"
 )
 
 # --- Product Name atkarīgs no kategorijas ---
@@ -89,16 +90,6 @@ if selected_categories:
         .unique()
         .tolist()
     )
-else:
-    available_products = df["Product_Name"].dropna().unique().tolist()
-
-available_products = sorted(available_products)
-
-selected_products = st.sidebar.multiselect(
-    "Produkts",
-    options=available_products,
-    default=available_products
-)
 
 min_date = df["Date"].min()
 max_date = df["Date"].max()
@@ -121,17 +112,6 @@ if selected_categories:
 
 if selected_products:
     f = f[f["Product_Name"].isin(selected_products)]
-    
-else:
-    available_products = df["Product_Name"].dropna().unique().tolist()
-
-available_products = sorted(available_products)
-
-selected_products = st.sidebar.multiselect(
-    "Produkts",
-    options=available_products,
-    default=available_products
-)
 
 if isinstance(date_range, (list, tuple)) and len(date_range) == 2:
     start_date = pd.to_datetime(date_range[0])
