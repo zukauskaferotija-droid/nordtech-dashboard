@@ -4,6 +4,8 @@ import numpy as np
 import plotly.express as px
 
 st.set_page_config(page_title="NordTech Dashboard", layout="wide")
+st.caption("Interaktīva pārdošanas, atgriezumu un klientu kvalitātes analīze (Streamlit + Python)")
+st.markdown("---")
 
 @st.cache_data
 def load_data(orders_path: str, returns_path: str | None = None) -> pd.DataFrame:
