@@ -92,77 +92,72 @@ df["has_return"] = df["Return_ID"].notna()
 # ticket_count kā skaitlis
 df["ticket_count"] = pd.to_numeric(df["ticket_count"], errors="coerce").fillna(0).astype(int)
 
-# Sidebar filtri
-st.sidebar.header("Filtri")
+# Sidebar filtri (collapsible)
+with st.sidebar.expander("🔎 Filtri", expanded=True):
 
-all_categories = sorted(
-    df["Product_Category_clean"]
-      .astype(str)
-      .str.strip()
-      .str.replace(r"\s+", " ", regex=True)
-      .dropna()
-      .unique()
-      .tolist()
-)
-
-selected_categories = st.sidebar.multiselect(
-    "Produktu kategorija",
-    options=all_categories,
-    default=all_categories,
-    key="cat_filter"
-)
-
-# --- Product Name atkarīgs no kategorijas ---
-if selected_categories:
-    available_products = (
-        df[df["Product_Category_clean"].isin(selected_categories)]
-        ["Product_Name_clean"]
-        .dropna()
-        .unique()
-        .tolist()
+    all_categories = sorted(
+        df["Product_Category_clean"]
+          .dropna()
+          .unique()
+          .tolist()
     )
 
-# --- Product Name atkarīgs no kategorijas ---
-if selected_categories:
-    available_products = (
-        df[df["Product_Category_clean"].isin(selected_categories)]["Product_Name"]
-        .dropna()
-        .unique()
-        .tolist()
+    selected_categories = st.multiselect(
+        "Produktu kategorija",
+        options=all_categories,
+        default=all_categories,
+        key="cat_filter"
     )
-else:
-    available_products = df["Product_Name_clean"].dropna().unique().tolist()
 
-available_products = sorted(available_products)
+    # Product Name atkarīgs no kategorijas
+    if selected_categories:
+        available_products = (
+            df[df["Product_Category_clean"].isin(selected_categories)]
+            ["Product_Name_clean"]
+            .dropna()
+            .unique()
+            .tolist()
+        )
+    else:
+        available_products = df["Product_Name_clean"].dropna().unique().tolist()
 
-selected_products = st.sidebar.multiselect(
-    "Produkts",
-    options=available_products,
-    default=available_products,
-    key="product_filter"
-)
+    available_products = sorted(available_products)
 
-min_date = df["Date"].min()
-max_date = df["Date"].max()
-date_range = st.sidebar.date_input(
-    "Laika periods",
-    value=(min_date.date() if pd.notna(min_date) else None,
-           max_date.date() if pd.notna(max_date) else None)
-)
+    selected_products = st.multiselect(
+        "Produkts",
+        options=available_products,
+        default=available_products,
+        key="product_filter"
+    )
 
-all_payments = sorted(df["Payment_Status"].dropna().unique().tolist())
-selected_payments = st.sidebar.multiselect(
-    "Payment status",
-    options=all_payments,
-    default=all_payments
-)
+    min_date = df["Date"].min()
+    max_date = df["Date"].max()
 
+    date_range = st.date_input(
+        "Laika periods",
+        value=(min_date.date(), max_date.date())
+    )
+
+    all_payments = sorted(df["Payment_Status"].dropna().unique().tolist())
+    selected_payments = st.multiselect(
+        "Payment status",
+        options=all_payments,
+        default=all_payments,
+        key="payment_filter"
+    )
+
+    if st.button("🔄 Reset Filters"):
+        st.rerun()
+
+
+# Filtrēšana
 f = df.copy()
+
 if selected_categories:
     f = f[f["Product_Category_clean"].isin(selected_categories)]
 
 if selected_products:
-    f = f[f["Product_Name"].isin(selected_products)]
+    f = f[f["Product_Name_clean"].isin(selected_products)]
 
 if isinstance(date_range, (list, tuple)) and len(date_range) == 2:
     start_date = pd.to_datetime(date_range[0])
