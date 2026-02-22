@@ -76,63 +76,6 @@ st.write("Total Revenue:", float(df["Revenue"].sum()))
 st.write("Returns count:", int(df["has_return"].sum()))
 st.write("Tickets sum:", int(df["ticket_count"].sum()))
 
-TICKETS_PATH = "customer_tickets.jsonl"
-
-@st.cache_data
-def load_tickets(path: str) -> pd.DataFrame:
-    t = pd.read_json(path, lines=True)
-    t.columns = [c.strip() for c in t.columns]
-    return t
-
-try:
-    tickets = load_tickets(TICKETS_PATH)
-
-    # Meklē atslēgu
-    key_candidates = [
-        "Transaction_ID", "TransactionID", "transaction_id",
-        "Order_ID", "OrderID", "order_id",
-        "Customer_ID", "CustomerID", "customer_id"
-    ]
-
-    orders_key = next((k for k in key_candidates if k in df.columns), None)
-    tickets_key = next((k for k in key_candidates if k in tickets.columns), None)
-
-    if orders_key and tickets_key:
-        topic_col = next(
-            (c for c in ["Topic","topic","Category","category","Reason","reason","Issue","issue","Issue_Type","issue_type"]
-             if c in tickets.columns),
-             None
-        )
-
-        if topic_col:
-            t_agg = (
-                tickets.groupby(tickets_key)
-                       .agg(
-                           ticket_count=(tickets_key, "size"),
-                           top_topic=(topic_col, lambda s: s.value_counts().index[0] if len(s) else "n/a")
-                       )
-                       .reset_index()
-                       .rename(columns={tickets_key: orders_key})
-            )
-        else:
-            t_agg = (
-                tickets.groupby(tickets_key)
-                       .agg(ticket_count=(tickets_key, "size"))
-                       .reset_index()
-                       .rename(columns={tickets_key: orders_key})
-            )
-            t_agg["top_topic"] = "no_topic"
-
-        df = df.merge(t_agg, on=orders_key, how="left")
-        df["ticket_count"] = df["ticket_count"].fillna(0).astype(int)
-        df["top_topic"] = df["top_topic"].fillna("no_tickets")
-    else:
-        df["top_topic"] = "no_tickets"
-
-except Exception:
-    df["ticket_count"] = 0
-    df["top_topic"] = "no_tickets"
-
 # Sidebar filtri
 st.sidebar.header("Filtri")
 
@@ -206,7 +149,7 @@ if "Transaction_ID" not in f.columns:
 total_revenue = f["Revenue"].sum()
 return_rate = (f["has_return"].mean() * 100) if len(f) else 0
 returns_count = int(f["has_return"].sum())
-tickets_total = int(f.get("ticket_count", pd.Series(0, index=f.index)).sum())
+tickets_total = int(f["ticket_count"].sum())
 
 k1, k2, k3, k4 = st.columns(4)
 k1.metric("Kopējie ieņēmumi", f"{total_revenue:,.2f}")
