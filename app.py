@@ -139,12 +139,12 @@ with st.sidebar.expander("🔎 Filtri", expanded=True):
     )
 
     all_payments = sorted(df["Payment_Status"].dropna().unique().tolist())
-    selected_payments = st.multiselect(
-        "Payment status",
-        options=all_payments,
-        default=all_payments,
-        key="payment_filter"
-    )
+    payment_choice = st.selectbox(
+    "Payment status",
+    options=["All"] + all_payments,
+    index=0,
+    key="payment_filter"
+)
 
     if st.button("🔄 Reset Filters"):
         st.rerun()
@@ -164,8 +164,8 @@ if isinstance(date_range, (list, tuple)) and len(date_range) == 2:
     end_date = pd.to_datetime(date_range[1]) + pd.Timedelta(days=1) - pd.Timedelta(seconds=1)
     f = f[(f["Date"] >= start_date) & (f["Date"] <= end_date)]
 
-if selected_payments:
-    f = f[f["Payment_Status"].isin(selected_payments)]
+if payment_choice != "All":
+    f = f[f["Payment_Status"] == payment_choice]
     
 # --- SAFETY PATCH ---
 # sakārto kolonnu nosaukumus
