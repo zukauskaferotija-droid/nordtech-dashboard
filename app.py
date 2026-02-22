@@ -289,6 +289,16 @@ st.plotly_chart(
     use_container_width=True
 )
 
+# Dinamisks secinājums
+if len(seg) > 0:
+    worst_cat = seg.iloc[0]["Product_Category_clean"]
+    worst_rate = seg.iloc[0]["return_rate"]
+
+    st.markdown(
+        f"🔎 Augstākais atgriezumu līmenis novērots kategorijā "
+        f"**{worst_cat}** ({worst_rate:.2f}%)."
+    )
+
 st.subheader("Pareto (80/20): kuri produkti rada lielāko daļu atgriezumu?")
 
 # 1) Atgriezumu skaits pa produktiem
