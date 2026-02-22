@@ -7,59 +7,41 @@ st.set_page_config(page_title="NordTech Dashboard", layout="wide")
 
 @st.cache_data
 def load_data(orders_path: str, returns_path: str | None = None) -> pd.DataFrame:
-    # --- Orders ---
     df = pd.read_csv(orders_path)
-
-    # Normalizē kolonnu nosaukumus (noņem liekās atstarpes)
     df.columns = [c.strip() for c in df.columns]
 
-    # Droši datuma lauks (ja tāds ir)
+    # Date
     if "Date" in df.columns:
         df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
 
-    # Revenue = Price * Quantity (ja abi ir)
+    # Revenue
     if "Price" in df.columns and "Quantity" in df.columns:
         df["Revenue"] = pd.to_numeric(df["Price"], errors="coerce") * pd.to_numeric(df["Quantity"], errors="coerce")
     else:
-        df["Revenue"] = np.nan
+        df["Revenue"] = 0
 
-    # --- Return flag (droši) ---
-    # 1) Mēģini atrast Return_ID vai līdzīgu kolonnu orders failā
-    possible_return_cols = [
-        "Return_ID", "ReturnID", "return_id", "returnid", "Return Id", "ReturnId"
-    ]
-    return_col = next((c for c in possible_return_cols if c in df.columns), None)
+    # Default return flag
+    df["has_return"] = False
 
-    if return_col is not None:
-        df["has_return"] = df[return_col].notna()
-        return df
-
-    # 2) Ja orders failā nav Return_ID, pamēģini izveidot no returns faila (Excel)
-    df["has_return"] = False  # default
-
+    # Ja nav returns faila
     if returns_path is None:
         return df
 
     try:
-    ret = pd.read_excel(returns_path)
-    ret.columns = [c.strip() for c in ret.columns]
+        ret = pd.read_excel(returns_path)
+        ret.columns = [c.strip() for c in ret.columns]
 
-    order_key_candidates = [
-        "Transaction_ID", "TransactionID", "transaction_id",
-        "Order_ID", "OrderID", "order_id", "Order Id", "OrderId"
-    ]
+        order_key_candidates = [
+            "Transaction_ID", "TransactionID", "transaction_id",
+            "Order_ID", "OrderID", "order_id"
+        ]
 
-    ret_key_candidates = [
-        "Transaction_ID", "TransactionID", "transaction_id",
-        "Order_ID", "OrderID", "order_id", "Order Id", "OrderId"
-    ]
-
-    orders_key = next((c for c in order_key_candidates if c in df.columns), None)
-    ret_key = next((c for c in ret_key_candidates if c in ret.columns), None)
+        orders_key = next((c for c in order_key_candidates if c in df.columns), None)
+        ret_key = next((c for c in order_key_candidates if c in ret.columns), None)
 
         if orders_key and ret_key:
-            returned_orders = set(ret[ret_key].dropna().astype(str))
-            df["has_return"] = df[orders_key].astype(str).isin(returned_orders)
+            returned_ids = set(ret[ret_key].dropna().astype(str))
+            df["has_return"] = df[orders_key].astype(str).isin(returned_ids)
 
         return df
 
