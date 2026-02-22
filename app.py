@@ -51,8 +51,9 @@ DATA_PATH = "enriched_data.csv"
 df = pd.read_csv(DATA_PATH)
 df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
 
+st.write("Columns:", df.columns.tolist())
 st.write("ROWS in orders:", len(df))
-st.write("Total Revenue RAW:", df["Revenue"].sum())
+st.write("Total Revenue RAW:", float(df.get("Revenue", pd.Series(0, index=df.index)).sum()))
 
 TICKETS_PATH = "customer_tickets.jsonl"
 
