@@ -289,6 +289,67 @@ st.plotly_chart(
     use_container_width=True
 )
 
+st.subheader("Pareto (80/20): kuri produkti rada lielāko daļu atgriezumu?")
+
+# 1) Atgriezumu skaits pa produktiem
+pareto = (
+    f.groupby("Product_Name_clean")  # ja nav clean, liec "Product_Name"
+     .agg(
+         returns=("has_return", "sum"),
+         orders=("Transaction_ID", "count"),
+         revenue=("Revenue", "sum")
+     )
+     .reset_index()
+)
+
+# Ja nav atgriezumu vispār (drošībai)
+if pareto["returns"].sum() == 0:
+    st.info("Šajā filtrā nav atgriezumu, tāpēc Pareto grafiks nav izveidojams.")
+else:
+    # 2) Sakārto pēc returns (lielākie vispirms)
+    pareto = pareto.sort_values("returns", ascending=False)
+
+    # 3) Kumulatīvie %
+    pareto["cum_returns"] = pareto["returns"].cumsum()
+    pareto["cum_returns_pct"] = pareto["cum_returns"] / pareto["returns"].sum() * 100
+
+    pareto["cum_products"] = np.arange(1, len(pareto) + 1)
+    pareto["cum_products_pct"] = pareto["cum_products"] / len(pareto) * 100
+
+    # 4) Atrodi punktu, kur sasniedz 80% atgriezumu
+    idx_80 = pareto[pareto["cum_returns_pct"] >= 80].index.min()
+    products_for_80 = int(pareto.loc[idx_80, "cum_products"]) if pd.notna(idx_80) else len(pareto)
+
+    st.caption(f"🔎 ~{products_for_80} produkti (~{products_for_80/len(pareto)*100:.0f}%) veido ~80% no visiem atgriezumiem šajā filtrā.")
+
+    # 5) Grafiks (līnija): X = kumulatīvais produktu %, Y = kumulatīvais atgriezumu %
+    fig_pareto = px.line(
+        pareto,
+        x="cum_products_pct",
+        y="cum_returns_pct",
+        title="Pareto līkne: kumulatīvie produkti (%) vs kumulatīvie atgriezumi (%)",
+        markers=True
+    )
+
+    # 6) 80% horizontālā līnija + vertikālā līnija pie atrastā punkta
+    x80 = pareto.loc[idx_80, "cum_products_pct"] if pd.notna(idx_80) else 100
+
+    fig_pareto.add_hline(y=80, line_dash="dash", annotation_text="80% atgriezumu", annotation_position="top left")
+    fig_pareto.add_vline(x=x80, line_dash="dash", annotation_text=f"{x80:.1f}% produktu", annotation_position="top right")
+
+    fig_pareto.update_yaxes(range=[0, 100], title="Kumulatīvie atgriezumi (%)")
+    fig_pareto.update_xaxes(range=[0, 100], title="Kumulatīvie produkti (%)")
+
+    st.plotly_chart(fig_pareto, use_container_width=True)
+
+    # 7) Parādi TOP produktus, kas veido 80% (tabula)
+    top_80 = pareto.loc[:idx_80, ["Product_Name_clean", "returns", "orders", "revenue", "cum_returns_pct"]].copy()
+    top_80 = top_80.rename(columns={"Product_Name_clean": "Product_Name"})
+    top_80["cum_returns_pct"] = top_80["cum_returns_pct"].round(2)
+
+    st.markdown("**Produkti, kas kopā veido ~80% atgriezumu:**")
+    st.dataframe(top_80, use_container_width=True)
+
 st.subheader("Top problem cases (pēc atgriezumiem)")
 top_cases = (f.groupby(["Product_Category_clean","Product_Name_clean"])
               .agg(
