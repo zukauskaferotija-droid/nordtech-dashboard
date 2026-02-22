@@ -10,6 +10,16 @@ def load_data(orders_path: str, returns_path: str | None = None) -> pd.DataFrame
     df = pd.read_csv(orders_path)
     df.columns = [c.strip() for c in df.columns]
 
+    # Revenue (jo enriched failā nav kolonnas Revenue)
+    df["Revenue"] = pd.to_numeric(df["Price"], errors="coerce") * pd.to_numeric(df["Quantity"], errors="coerce")
+    df["Revenue"] = df["Revenue"].fillna(0)
+
+    # has_return (enriched failā ir Return_ID, nevis has_return)
+    df["has_return"] = df["Return_ID"].notna()
+
+    # ticket_count droši kā skaitlis
+    df["ticket_count"] = pd.to_numeric(df["ticket_count"], errors="coerce").fillna(0).astype(int)
+
     # Date
     if "Date" in df.columns:
         df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
@@ -19,9 +29,6 @@ def load_data(orders_path: str, returns_path: str | None = None) -> pd.DataFrame
         df["Revenue"] = pd.to_numeric(df["Price"], errors="coerce") * pd.to_numeric(df["Quantity"], errors="coerce")
     else:
         df["Revenue"] = 0
-
-    # Default return flag
-    df["has_return"] = False
 
     # Ja nav returns faila
     if returns_path is None:
@@ -51,9 +58,10 @@ DATA_PATH = "enriched_data.csv"
 df = pd.read_csv(DATA_PATH)
 df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
 
-st.write("Columns:", df.columns.tolist())
-st.write("ROWS in orders:", len(df))
-st.write("Total Revenue RAW:", float(df.get("Revenue", pd.Series(0, index=df.index)).sum()))
+st.write("ROWS:", len(df))
+st.write("Total Revenue:", float(df["Revenue"].sum()))
+st.write("Returns count:", int(df["has_return"].sum()))
+st.write("Tickets sum:", int(df["ticket_count"].sum()))
 
 TICKETS_PATH = "customer_tickets.jsonl"
 
@@ -106,7 +114,6 @@ try:
         df["ticket_count"] = df["ticket_count"].fillna(0).astype(int)
         df["top_topic"] = df["top_topic"].fillna("no_tickets")
     else:
-        df["ticket_count"] = 0
         df["top_topic"] = "no_tickets"
 
 except Exception:
