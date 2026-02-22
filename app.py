@@ -40,12 +40,6 @@ def load_data(orders_path: str, returns_path: str | None = None) -> pd.DataFrame
             df["has_return"] = df[orders_key].astype(str).str.strip().isin(returned_ids)
         # --- /RETURNS LINKING ---
 
-        # DEBUG (4 atstarpes priekšā!)
-        st.write("RETURNS columns:", ret.columns.tolist())
-        st.write("ORDERS columns:", df.columns.tolist())
-        st.write("RETURNS sample:")
-        st.write(ret.head(3))
-
         return df
 
     except Exception:
