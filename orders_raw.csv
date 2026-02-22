@@ -1,0 +1,1201 @@
+Transaction_ID,Date,Customer_ID,Product_Category,Product_Name,Price,Quantity,Payment_Status
+100236,2023-11-24,C0012,Electronics,Smartphone Z,919.20,1,Paid
+100061,2023-11-17,C0002,Electronics,Laptop X,"1598,23 EUR",1,Paid
+101131,2023-12-14,C0008,Smart Home,NordPlug,23.86,1,Paid
+100391,28/11/2023,C0001,Smart Home,NordTherm,$101.68,1,Paid
+100319,2023-11-27,C0004,Accessories,Phone Case,"35,72 EUR",1,Paid
+100889,2023-12-09,C0001,Electronics,NoiseCancel Headphones,230.36,1,Paid
+100105,2023-11-19,C0056,Smart Home,NordCam Mini,"82,40 EUR",1,Paid
+100603,2023-12-04,C0002,Electronics,Laptop X,"1771,94 EUR",1,Paid
+101189,2023-11-28,C0001,Smart Home,NordLock Pro,210.88,1,Paid
+100563,2023-12-03,C0008,Electronics ,Smartphone Z,855.14,1,Paid
+100366,2023-11-28,C0004, Electronics ,Smartphone Z,1024.64,1,Paid
+100996,2023-12-12,C0003,Smart Home,NordLock Pro,222.61,1,Paid
+100043,16/11/2023,C0002,Electronics ,TV Pro,$1164.30,1,Paid
+100725,2023-12-06,C0003, Accessories,Laptop Sleeve,27.13,2,Paid
+100456,2023-11-30,C0001, Smart Home ,NordTherm,"105,45 EUR",1,Paid
+100537,2023-12-02,C0030,Electronics,NoiseCancel Headphones,"290,46 EUR",1,Paid
+101176,2023-11-24,C0017,Accessories,Phone Case,"34,84 EUR",1,Paid
+101058,2023-12-13,C0001,Electronics,Laptop X,"1504,82 EUR",1,Paid
+100032,2023-11-16,C0094,Electronics,Laptop X,$1585.05,1,Paid
+100455,2023-11-30,C0117, Smart Home ,NordLock Pro,205.04,2,Paid
+100354,2023-11-28,C0002, Smart Home ,NordLock Pro,"201,09 EUR",1,Paid
+101181,08/12/2023,C0006,Accessories,Accessory Bundle,27.11,1,Paid
+100062,17/11/2023,C0001, Smart Home ,NordLock Pro,221.97,1,Paid
+100858,09/12/2023,C0001,Electronics,TV Pro,1060.25,1,Failed
+101049,2023-12-13,C0001, Electronics ,NoiseCancel Headphones,288,1,Paid
+100686,2023-12-05,C0059,Electronics,Tablet A,753.90,1,Paid
+100233,24/11/2023,C0278,Electronics,TV Pro,1041.16,1,Paid
+100094,2023-11-18,C0076, Accessories ,Charger,"28,32 EUR",3,Paid
+100215,23/11/2023,C0063,Electronics,Smartphone Z,1077.99,1,Paid
+100310,2023-11-26,C0002,Electronics,TV Pro,1601.36,1,Paid
+100202,2023-11-23,C0002, Smart Home ,NordLock Pro,$186.48,1,Pending
+100290,2023-11-25,C0002, Accessories ,Phone Case,12.32,1,Paid
+100737,2023-12-06,C0015,Electronics,Tablet A,672.16,1,Paid
+100318,2023-11-27,C0005,Electronics,Smartphone Z,727.66,1,Paid
+101141,01/12/2023,C0038, Accessories ,Accessory Bundle,55.24,3,Paid
+100891,2023-12-09,C0008,Smart Home,NordLock Pro,"212,31 EUR",2,Paid
+101188,2023-12-10,C0062, Accessories ,Wireless Mouse,32.09,1,Paid
+100096,2023-11-18,C0001,Electronics,NoiseCancel Headphones,"166,52 EUR",1,Paid
+100880,2023-12-09,C0001,Smart Home,NordLock Pro,231.50,1,Paid
+100070,2023-11-17,C0124,Accessories,Accessory Bundle,"86,79 EUR",1,Paid
+100797,07/12/2023,C0097,Electronics,Tablet A,583.65,1,Paid
+100721,2023-12-06,C0085,Smart Home,NordLock Pro,"200,26 EUR",1,Paid
+100796,2023-12-07,C0145,Accessories,Wireless Mouse,"43,57 EUR",1,Paid
+100353,28/11/2023,C0010,Electronics ,NoiseCancel Headphones,"297,95 EUR",1,Failed
+100352,2023-11-28,C0013, Electronics ,Laptop X,1343,1,Paid
+100551,02/12/2023,C0200,Electronics,Tablet A,"445,23 EUR",1,Paid
+100404,2023-11-29,C0017, Smart Home ,NordTherm,"83,85 EUR",1,Paid
+100715,06/12/2023,C0002,Electronics,NoiseCancel Headphones,"330,75 EUR",1,Paid
+100170,2023-11-22,C0199,Electronics,TV Pro,"1 050,20 EUR",1,Failed
+100431,29/11/2023,C0310,Smart Home,NordLock Pro,"193,31 EUR",1,Paid
+100608,2023-12-04,C0024,Smart Home,NordTherm,"81,21 EUR",1,Paid
+100648,2023-12-05,C0024,Electronics ,Smartphone Z,834.38,1,Paid
+100623,04/12/2023,C0002,Accessories,Laptop Sleeve,"43,96 EUR",2,Paid
+100341,2023-11-27,C0006,Electronics,NoiseCancel Headphones,300.70,2,Paid
+100742,2023-12-07,C0001, Accessories ,USB-C Cable,"10,69 EUR",4,Paid
+100873,2023-12-09,C0004,Electronics,Smartphone Z,"863,18 EUR",1,Paid
+100078,18/11/2023,C0007,Electronics,Tablet A,"527,12 EUR",1,Paid
+101143,2023-12-10,C0001,Electronics ,TV Pro,"970,60 EUR",1,Paid
+100910,10/12/2023,C0006,Smart Home,NordLock Pro,181.92,1,Failed
+100432,2023-11-29,C0006,Smart Home,NordLock Pro,187.29,1,Failed
+100272,25/11/2023,C0003, Electronics ,TV Pro,1118.62,1,Paid
+100081,18/11/2023,C0091,Electronics,Tablet A,372.51,1,Paid
+100280,2023-11-25,C0002,Accessories,Charger,"39,36 EUR",1,Paid
+100837,08/12/2023,C0006,Electronics,Tablet A,"702,29 EUR",1,Paid
+100506,2023-12-01,C0057, Accessories,Screen Protector,7.12,1,Paid
+100364,2023-11-28,C0003,Electronics,TV Pro,$1094.93,1,Paid
+101173,2023-12-07,C0002,Electronics ,Tablet A,$636.80,1,Paid
+100612,2023-12-04,C0052, Accessories,Charger,"35,09 EUR",3,Pending
+100040,2023-11-16,C0238,Electronics,Laptop X,1653.40,1,Paid
+101085,2023-12-13,C0038,Smart Home,NordCam Mini,"91,86 EUR",2,Paid
+100412,29/11/2023,C0053,Electronics,TV Pro,1261.41,1,Paid
+100278,25/11/2023,C0181,Smart Home,NordLock Pro,"247,91 EUR",1,Paid
+101101,2023-12-14,C0004,Smart Home,NordLock Pro,211.15,1,Paid
+100565,2023-12-03,C0005,Smart Home,NordLock Pro,185,1,Paid
+100827,2023-12-08,C0013, Electronics ,Tablet A,$665.07,1,Paid
+100561,03/12/2023,C0002,Electronics,Tablet A,"771,78 EUR",1,Paid
+101183,21/11/2023,C0170,Accessories,Charger,30.35,2,Paid
+100426,2023-11-29,C0031,Accessories,Screen Protector,$8.99,2,Failed
+100345,2023-11-27,C0250,Electronics,TV Pro,1536.64,1,Paid
+100998,12/12/2023,C0001,Accessories,Laptop Sleeve,"23,36 EUR",1,Failed
+101047,2023-12-13,C0023,Electronics,Tablet A,441.24,1,Paid
+100471,2023-11-30,C0019, Smart Home ,NordLock Pro,$180.99,1,Paid
+100303,2023-11-26,C0003, Smart Home ,NordLock Pro,224.82,1,Paid
+101002,12/12/2023,C0008,Electronics,Tablet A,318.91,1,Paid
+100570,2023-12-03,C0001, Accessories,Laptop Sleeve,"19,23 EUR",1,Paid
+100058,2023-11-17,C0031,Electronics,TV Pro,"914,97 EUR",1,Paid
+100395,2023-11-29,C0169,Electronics,NoiseCancel Headphones,"180,76 EUR",1,Paid
+100093,2023-11-18,C0004,Electronics ,Smartphone Z,894.13,1,Paid
+100798,2023-12-08,C0004, Accessories ,Laptop Sleeve,41.56,1,Paid
+100573,2023-12-03,C0008,Electronics,Laptop X,1597.38,1,Paid
+100484,2023-12-01,C0137, Smart Home ,NordCam Mini,80,1,Paid
+100261,2023-11-25,C0010, Electronics ,NoiseCancel Headphones,258.75,1,Paid
+100084,2023-11-18,C0001, Accessories,Wireless Mouse,"56,31 EUR",1,Paid
+100592,2023-12-03,C0024,Smart Home,NordLock Pro,"189,75 EUR",1,Paid
+100003,2023-11-15,C0059,Electronics,Laptop X,1446.04,1,Paid
+100042,2023-11-16,C0002,Accessories,Charger,"18,80 EUR",3,Paid
+100327,2023-11-27,C0002,Electronics,Laptop X,$1437.50,1,Paid
+100087,18/11/2023,C0002, Accessories,Accessory Bundle,32.79,1,Paid
+100457,30/11/2023,C0010,Accessories,Screen Protector,5,1,Paid
+100965,2023-12-11,C0279, Accessories ,Screen Protector,"12,26 EUR",1,Paid
+101028,2023-12-12,C0044,Accessories,Wireless Mouse,"31,71 EUR",1,Paid
+100731,06/12/2023,C0002,Electronics,TV Pro,"1405,31 EUR",2,Paid
+100852,09/12/2023,C0113, Accessories ,USB-C Cable,"18,62 EUR",2,Paid
+100916,2023-12-10,C0003,Electronics ,Laptop X,"1608,63 EUR",1,Paid
+101071,2023-12-13,C0013,Accessories,Wireless Mouse,26.47,2,Paid
+101160,2023-11-25,C0004,Accessories,Phone Case,"19,93 EUR",2,Paid
+100108,19/11/2023,C0008, Smart Home ,NordPlug,$24.89,1,Paid
+100690,2023-12-06,C0003, Smart Home ,NordLock Pro,$192.91,1,Paid
+100986,2023-12-11,C0178,Accessories,Charger,45.19,4,Paid
+100747,07/12/2023,C0006, Accessories ,Screen Protector,$11.32,4,Paid
+101059,2023-12-13,C0002,Smart Home,NordLock Pro,202.54,1,Paid
+101184,2023-11-28,C0001,Smart Home,NordLock Pro,210.88,1,Paid
+100165,22/11/2023,C0001, Electronics ,Smartphone Z,$771.06,1,Paid
+100779,2023-12-07,C0001,Electronics,TV Pro,916.41,1,Paid
+100039,2023-11-16,C0003,Accessories,Accessory Bundle,"91,93 EUR",2,Paid
+100149,2023-11-21,C0001,Electronics,Tablet A,"475,44 EUR",1,Paid
+100068,17/11/2023,C0004,Accessories,Accessory Bundle,84.63,2,Paid
+100260,2023-11-25,C0003, Electronics ,Smartphone Z,"706,61 EUR",2,Paid
+100558,03/12/2023,C0008,Electronics,Tablet A,$356.42,1,Paid
+100184,22/11/2023,C0028, Smart Home ,NordLock Pro,"210,27 EUR",2,Paid
+101079,13/12/2023,C0003,Accessories,Charger,"40,81 EUR",1,Paid
+101094,2023-12-14,C0030,Electronics,Laptop X,"1326,30 EUR",2,Paid
+100944,2023-12-11,C0289,Electronics,NoiseCancel Headphones,157.39,1,Paid
+100054,2023-11-17,C0011,Electronics,Laptop X,"1 798,82 EUR",1,Paid
+100617,2023-12-04,C0002,Electronics,Tablet A,$351.21,1,Paid
+100136,20/11/2023,C0256,Smart Home,NordTherm,85,2,Paid
+100974,2023-12-11,C0031,Accessories,Accessory Bundle,68.13,3,Paid
+100955,2023-12-11,C0002, Accessories,Screen Protector,"5,43 EUR",1,Paid
+100221,2023-11-24,C0001, Electronics ,TV Pro,"1 386,66 EUR",1,Paid
+101060,2023-12-13,C0001,Electronics ,TV Pro,1293.65,1,Paid
+100726,2023-12-06,C0001,Electronics,NoiseCancel Headphones,$302.52,1,Paid
+101151,2023-12-11,C0007, Accessories ,Accessory Bundle,"44,45 EUR",1,Paid
+100861,2023-12-09,C0046,Smart Home,NordLock Pro,201,1,Paid
+100329,2023-11-27,C0001, Accessories ,Phone Case,"12,21 EUR",2,Paid
+100835,08/12/2023,C0023,Electronics,Laptop X,"1 517,20 EUR",1,Paid
+100312,26/11/2023,C0148,Electronics,Laptop X,$1691.90,1,Paid
+100377,2023-11-28,C0009,Accessories,USB-C Cable,"19,51 EUR",1,Paid
+100639,04/12/2023,C0042,Smart Home,NordLock Pro,"223,67 EUR",2,Paid
+101098,2023-12-14,C0001,Accessories,Charger,"22,04 EUR",1,Paid
+100173,22/11/2023,C0008,Electronics,Smartphone Z,"1043,81 EUR",1,Paid
+100883,2023-12-09,C0002,Electronics,Laptop X,1389.38,1,Paid
+100560,03/12/2023,C0196,Electronics,Smartphone Z,$840.55,1,Paid
+100289,2023-11-25,C0005, Smart Home ,NordLock Pro,249.63,2,Paid
+100294,25/11/2023,C0002, Accessories,USB-C Cable,13.57,2,Paid
+100435,2023-11-29,C0008,Accessories,Screen Protector,8.41,3,Paid
+101154,2023-12-11,C0015,Smart Home,NordLock Pro,"241,95 EUR",1,Paid
+100666,05/12/2023,C0001,Accessories,Laptop Sleeve,22.57,4,Paid
+100270,25/11/2023,C0031,Accessories,Laptop Sleeve,$17.02,2,Paid
+101087,2023-12-14,C0009, Electronics ,Tablet A,484.26,1,Paid
+100321,2023-11-27,C0004, Accessories ,Accessory Bundle,"51,76 EUR",1,Paid
+100462,2023-11-30,C0009,Electronics,Laptop X,"1389,57 EUR",1,Paid
+100370,2023-11-28,C0217,Accessories,USB-C Cable,"19,89 EUR",2,Failed
+100218,2023-11-23,C0004,Electronics,Smartphone Z,"989,29 EUR",2,Paid
+100083,18/11/2023,C0002,Smart Home,NordLock Pro,215,1,Paid
+100273,2023-11-25,C0002,Electronics,Laptop X,"1374,89 EUR",1,Paid
+100637,2023-12-04,C0003,Electronics,Smartphone Z,713,1,Paid
+101103,2023-12-14,C0103, Accessories,Accessory Bundle,63.95,1,Paid
+100178,2023-11-22,C0025,Electronics,NoiseCancel Headphones,"252,35 EUR",1,Paid
+100593,2023-12-03,C0297,Accessories,Laptop Sleeve,27.83,1,Paid
+100410,2023-11-29,C0026, Accessories ,Accessory Bundle,"35,78 EUR",1,Pending
+100401,2023-11-29,C0017,Accessories,Phone Case,10,1,Paid
+100438,2023-11-30,C0010, Accessories,Charger,$20.58,1,Paid
+100600,04/12/2023,C0043,Accessories,Phone Case,"32,88 EUR",1,Paid
+100753,2023-12-07,C0040, Electronics ,Tablet A,"436,32 EUR",1,Paid
+100765,2023-12-07,C0080,Electronics,Laptop X,"1361,87 EUR",1,Paid
+100782,2023-12-07,C0001,Smart Home,NordLock Pro,201,2,Paid
+101064,13/12/2023,C0002,Accessories,Phone Case,16.39,3,Paid
+100477,30/11/2023,C0001, Smart Home ,NordLock Pro,$195.76,1,Pending
+100936,2023-12-11,C0151,Electronics,TV Pro,"1641,80 EUR",1,Paid
+100489,2023-12-01,C0015,Electronics,Tablet A,559,2,Paid
+100238,2023-11-24,C0270,Accessories,USB-C Cable,17,1,Paid
+100026,16/11/2023,C0091,Electronics,NoiseCancel Headphones,"192,39 EUR",1,Paid
+100244,2023-11-24,C0002,Electronics ,NoiseCancel Headphones,229.51,1,Paid
+100828,2023-12-08,C0001, Accessories,Screen Protector,"13,81 EUR",2,Paid
+100976,2023-12-11,C0008,Electronics ,Tablet A,"365,96 EUR",1,Paid
+100427,2023-11-29,C0001,Electronics,TV Pro,"1187,16 EUR",1,Paid
+100023,16/11/2023,C0016, Accessories ,Accessory Bundle,30.78,1,Paid
+100256,2023-11-24,C0002, Smart Home ,NordLock Pro,$235.74,1,Paid
+100293,2023-11-25,C0001, Accessories,Charger,$40.76,1,Paid
+100811,2023-12-08,C0008, Electronics ,NoiseCancel Headphones,"161,34 EUR",1,Paid
+100295,2023-11-25,C0001,Electronics,Smartphone Z,"789,49 EUR",1,Paid
+100785,2023-12-07,C0034,Electronics,Smartphone Z,"1072,68 EUR",1,Paid
+100122,2023-11-20,C0113, Accessories,Phone Case,33.56,1,Paid
+100807,2023-12-08,C0007,Accessories,USB-C Cable,"12,72 EUR",1,Paid
+100953,2023-12-11,C0015,Smart Home,NordLock Pro,"241,95 EUR",1,Paid
+101084,2023-12-13,C0225,Accessories,Laptop Sleeve,$20.38,2,Paid
+100317,2023-11-27,C0001,Electronics,Smartphone Z,"724,77 EUR",1,Paid
+100679,05/12/2023,C0001,Smart Home,NordLock Pro,197.29,1,Pending
+100503,2023-12-01,C0122,Smart Home,NordLock Pro,207.18,1,Paid
+100190,2023-11-22,C0215,Electronics,Smartphone Z,"846,71 EUR",2,Paid
+100763,07/12/2023,C0001,Accessories,USB-C Cable,"16,94 EUR",1,Paid
+100171,2023-11-22,C0090,Accessories,Charger,$28.87,4,Paid
+100155,21/11/2023,C0003,Electronics ,TV Pro,"1019,81 EUR",1,Paid
+100177,22/11/2023,C0002,Electronics,NoiseCancel Headphones,309,1,Paid
+100350,2023-11-27,C0038, Accessories ,Charger,$34.12,2,Paid
+100991,2023-12-12,C0107, Electronics ,Tablet A,$427.39,1,Failed
+101066,2023-12-13,C0007,Electronics,NoiseCancel Headphones,258.62,1,Pending
+100583,2023-12-03,C0001, Electronics ,TV Pro,"1181,73 EUR",1,Paid
+101191,2023-11-15,C0002,Electronics,Tablet A,"488,25 EUR",1,Paid
+101035,2023-12-12,C0001, Smart Home ,NordLock Pro,"195,28 EUR",2,Paid
+100578,2023-12-03,C0012, Accessories ,Wireless Mouse,"51,21 EUR",1,Pending
+101031,12/12/2023,C0020,Smart Home,NordLock Pro,"205,55 EUR",1,Paid
+100524,2023-12-02,C0104, Accessories ,Wireless Mouse,"18,15 EUR",1,Paid
+100777,2023-12-07,C0206, Accessories ,Phone Case,"16,43 EUR",1,Paid
+101175,2023-12-07,C0004,Electronics,Smartphone Z,"893,14 EUR",1,Paid
+100607,2023-12-04,C0054,Electronics ,Laptop X,1698.65,1,Paid
+100983,2023-12-11,C0038,Accessories,Laptop Sleeve,"38,52 EUR",2,Paid
+100562,03/12/2023,C0142, Accessories ,USB-C Cable,"17,33 EUR",1,Paid
+100842,2023-12-08,C0007,Electronics,Laptop X,"1714,94 EUR",1,Paid
+101187,2023-11-29,C0017, Smart Home ,NordTherm,"83,85 EUR",1,Paid
+100630,2023-12-04,C0069,Accessories,Wireless Mouse,13.89,1,Paid
+100898,2023-12-10,C0001,Smart Home,NordLock Pro,"241,97 EUR",1,Paid
+100067,2023-11-17,C0003,Accessories,Wireless Mouse,56.08,1,Paid
+100714,06/12/2023,C0001,Accessories,Screen Protector,12.92,1,Paid
+100182,2023-11-22,C0001,Electronics,TV Pro,$1046.88,1,Failed
+100958,2023-12-11,C0001,Accessories,Charger,43,3,Paid
+100696,2023-12-06,C0135, Smart Home ,NordLock Pro,225,2,Paid
+100334,2023-11-27,C0005,Electronics,Tablet A,322.05,1,Paid
+100938,11/12/2023,C0014,Electronics ,Smartphone Z,"782,74 EUR",1,Failed
+100733,2023-12-06,C0050, Accessories,Charger,48.23,3,Paid
+100913,2023-12-10,C0001,Accessories,Wireless Mouse,"19,15 EUR",1,Paid
+100644,2023-12-04,C0301, Accessories,USB-C Cable,"9,53 EUR",2,Paid
+100541,2023-12-02,C0020,Accessories,Wireless Mouse,"58,32 EUR",1,Paid
+100621,04/12/2023,C0003,Electronics,Laptop X,"1 776,33 EUR",1,Paid
+100577,2023-12-03,C0002, Smart Home ,NordLock Pro,$213.50,2,Paid
+100045,2023-11-17,C0115,Electronics,TV Pro,1532.19,1,Paid
+100080,18/11/2023,C0002,Accessories,Accessory Bundle,"35,86 EUR",2,Paid
+100911,2023-12-10,C0003,Electronics,NoiseCancel Headphones,254.21,1,Paid
+100820,2023-12-08,C0001,Accessories,Accessory Bundle,61.58,3,Failed
+100990,2023-12-12,C0157, Electronics ,NoiseCancel Headphones,"328,41 EUR",2,Paid
+100634,04/12/2023,C0002,Electronics,Smartphone Z,"810,82 EUR",1,Paid
+100118,2023-11-19,C0068,Accessories,Laptop Sleeve,38,1,Paid
+100906,10/12/2023,C0048, Electronics ,NoiseCancel Headphones,$158.01,1,Paid
+100332,2023-11-27,C0002,Electronics,Laptop X,1608.06,1,Paid
+101117,2023-12-14,C0018, Accessories,Charger,27,2,Paid
+100755,2023-12-07,C0003, Accessories,Accessory Bundle,76.30,2,Paid
+100483,2023-12-01,C0001,Smart Home,NordLock Pro,"216,17 EUR",1,Paid
+100047,2023-11-17,C0006,Smart Home,NordLock Pro,208.67,1,Paid
+100605,2023-12-04,C0013,Smart Home,NordTherm,"142,49 EUR",1,Paid
+100124,2023-11-20,C0004,Electronics,NoiseCancel Headphones,"233,73 EUR",1,Paid
+100240,2023-11-24,C0018,Accessories,USB-C Cable,"13,43 EUR",2,Paid
+100027,16/11/2023,C0004,Electronics ,NoiseCancel Headphones,170.89,1,Paid
+101168,28/11/2023,C0004, Smart Home ,NordLock Pro,"246,71 EUR",1,Paid
+100057,2023-11-17,C0061,Electronics,TV Pro,1046.02,1,Paid
+101072,2023-12-13,C0001,Smart Home,NordLock Pro,212.32,1,Paid
+100709,2023-12-06,C0001,Accessories,Wireless Mouse,54.54,3,Paid
+101045,2023-12-13,C0027,Smart Home,NordPlug,"32,53 EUR",2,Paid
+100379,2023-11-28,C0001,Accessories,Accessory Bundle,67.03,2,Paid
+100316,2023-11-26,C0002,Electronics,Tablet A,597.79,1,Paid
+100907,10/12/2023,C0005,Electronics ,TV Pro,"1352,21 EUR",1,Paid
+100180,2023-11-22,C0006,Electronics ,NoiseCancel Headphones,"228,54 EUR",1,Paid
+101018,12/12/2023,C0002, Accessories ,USB-C Cable,15.31,2,Paid
+101088,2023-12-14,C0006,Accessories,USB-C Cable,"14,75 EUR",1,Paid
+100515,02/12/2023,C0243,Electronics,Tablet A,533,1,Paid
+100693,2023-12-06,C0001, Accessories,Laptop Sleeve,26.83,2,Paid
+100682,2023-12-05,C0223, Accessories,Screen Protector,"7,50 EUR",2,Paid
+101037,2023-12-12,C0003,Electronics,NoiseCancel Headphones,"308,13 EUR",1,Paid
+100106,19/11/2023,C0020, Accessories,USB-C Cable,14.99,2,Paid
+100786,2023-12-07,C0112,Smart Home,NordLock Pro,"245,31 EUR",1,Paid
+100915,2023-12-10,C0028,Accessories,USB-C Cable,"15,71 EUR",1,Failed
+100821,08/12/2023,C0001,Accessories,Screen Protector,"6,18 EUR",1,Paid
+100268,2023-11-25,C0005,Electronics,TV Pro,1187.59,1,Pending
+101148,27/11/2023,C0220, Accessories ,Phone Case,"31,01 EUR",4,Paid
+100789,2023-12-07,C0030,Electronics ,Laptop X,1363,1,Paid
+100967,2023-12-11,C0002,Accessories,Screen Protector,"14,65 EUR",2,Pending
+100448,30/11/2023,C0001, Accessories ,Screen Protector,13.04,2,Paid
+100041,2023-11-16,C0007, Accessories ,Accessory Bundle,"96,52 EUR",1,Paid
+100533,2023-12-02,C0034, Accessories,Laptop Sleeve,"32,30 EUR",3,Paid
+100301,2023-11-26,C0046,Accessories,Charger,15.37,1,Paid
+100434,2023-11-29,C0005,Electronics,NoiseCancel Headphones,$344.00,1,Paid
+100802,2023-12-08,C0183,Smart Home,NordLock Pro,"200,86 EUR",1,Paid
+101126,14/12/2023,C0001,Smart Home,NordLock Pro,"206,17 EUR",1,Paid
+100269,2023-11-25,C0070,Electronics,Laptop X,"1466,72 EUR",1,Pending
+100619,04/12/2023,C0001,Electronics,TV Pro,1574.14,1,Paid
+100633,2023-12-04,C0040,Accessories,USB-C Cable,13,3,Paid
+101029,2023-12-12,C0001,Accessories,Laptop Sleeve,"37,26 EUR",2,Paid
+101081,2023-12-13,C0004, Smart Home ,NordPlug,$21.26,1,Paid
+100297,26/11/2023,C0015,Smart Home,NordLock Pro,248,1,Paid
+101155,08/12/2023,C0042,Electronics,Laptop X,1620.72,1,Paid
+100703,06/12/2023,C0001,Smart Home,NordLock Pro,225.82,1,Paid
+100594,2023-12-03,C0147,Electronics,Tablet A,"724,89 EUR",1,Paid
+100971,2023-12-11,C0002,Electronics,TV Pro,1667.73,1,Paid
+100299,2023-11-26,C0018,Electronics,NoiseCancel Headphones,281.50,1,Paid
+101095,2023-12-14,C0002,Smart Home,NordLock Pro,"238,51 EUR",1,Paid
+100905,2023-12-10,C0311,Electronics,TV Pro,1080,1,Paid
+100208,23/11/2023,C0002,Accessories,USB-C Cable,$11.04,1,Paid
+100704,06/12/2023,C0010, Smart Home ,NordLock Pro,241,1,Paid
+100896,2023-12-10,C0001,Accessories,USB-C Cable,"18,60 EUR",1,Paid
+101132,2023-12-14,C0001,Electronics,Tablet A,$589.01,1,Paid
+100144,2023-11-21,C0001, Accessories ,Laptop Sleeve,31.36,3,Paid
+100251,24/11/2023,C0001,Accessories,Charger,41.99,3,Paid
+100514,01/12/2023,C0095,Electronics ,Laptop X,1623,1,Paid
+100978,2023-12-11,C0003,Electronics,NoiseCancel Headphones,279.88,1,Paid
+100824,2023-12-08,C0007,Electronics,Tablet A,524.82,1,Paid
+101082,2023-12-13,C0014, Smart Home ,NordLock Pro,"231,99 EUR",1,Paid
+100717,2023-12-06,C0001, Accessories ,Phone Case,"39,48 EUR",1,Paid
+100732,2023-12-06,C0001,Electronics,TV Pro,$1144.44,1,Paid
+100164,2023-11-22,C0015, Electronics ,Smartphone Z,"845,23 EUR",1,Paid
+100501,2023-12-01,C0002,Electronics,NoiseCancel Headphones,$255.15,1,Paid
+100264,2023-11-25,C0316, Smart Home ,NordLock Pro,"208,11 EUR",1,Paid
+100082,2023-11-18,C0001,Electronics,Laptop X,1457.02,2,Paid
+101142,2023-11-17,C0061,Electronics,TV Pro,1046.02,1,Paid
+100768,2023-12-07,C0001, Accessories,Accessory Bundle,"55,24 EUR",1,Paid
+100325,2023-11-27,C0125,Smart Home,NordLock Pro,220.55,1,Paid
+100473,2023-11-30,C0004,Electronics,NoiseCancel Headphones,"316,19 EUR",1,Paid
+100564,2023-12-03,C0001,Smart Home,NordLock Pro,223.08,1,Paid
+100145,21/11/2023,C0170,Accessories,Charger,30.35,2,Paid
+100663,2023-12-05,C0066,Smart Home,NordLock Pro,200.01,1,Paid
+100814,08/12/2023,C0001,Smart Home,NordLock Pro,"181,89 EUR",1,Paid
+100275,2023-11-25,C0004,Accessories,Phone Case,"19,93 EUR",2,Paid
+100972,11/12/2023,C0005, Smart Home ,NordLock Pro,216.12,2,Pending
+100673,2023-12-05,C0016,Electronics,Tablet A,507.23,1,Paid
+100793,07/12/2023,C0083,Accessories,USB-C Cable,19.69,2,Paid
+100752,2023-12-07,C0271, Smart Home ,NordLock Pro,212.22,2,Paid
+100730,2023-12-06,C0115,Accessories,Wireless Mouse,58.87,1,Paid
+100609,2023-12-04,C0004,Smart Home,NordCam Mini,62,1,Paid
+100825,08/12/2023,C0021,Electronics,Tablet A,652.84,1,Paid
+100088,2023-11-18,C0027,Accessories,Charger,"20,20 EUR",1,Paid
+100945,2023-12-11,C0012,Electronics,Tablet A,"736,42 EUR",2,Paid
+100853,09/12/2023,C0042, Electronics ,Smartphone Z,1004,1,Paid
+100307,2023-11-26,C0003,Electronics,Smartphone Z,912.54,1,Paid
+100552,2023-12-02,C0145,Electronics,TV Pro,1419,1,Paid
+100188,2023-11-22,C0001,Electronics ,Smartphone Z,"851,41 EUR",1,Paid
+100892,2023-12-10,C0009,Accessories,Wireless Mouse,25.68,1,Paid
+100288,2023-11-25,C0003, Accessories,Charger,$29.37,1,Paid
+100871,2023-12-09,C0075, Smart Home ,NordLock Pro,185.47,1,Paid
+100668,2023-12-05,C0030,Electronics ,Laptop X,$1686.77,1,Paid
+101001,12/12/2023,C0004,Smart Home,NordLock Pro,$186.38,1,Pending
+101061,2023-12-13,C0001, Accessories ,Screen Protector,8.08,2,Paid
+100756,2023-12-07,C0001, Accessories,Charger,43.27,1,Paid
+100372,2023-11-28,C0005,Accessories,Accessory Bundle,$36.70,2,Paid
+100050,2023-11-17,C0003,Electronics,Tablet A,336.05,2,Paid
+100454,2023-11-30,C0006, Electronics ,Smartphone Z,$1061.74,1,Paid
+100549,02/12/2023,C0001,Smart Home,NordLock Pro,190.10,1,Paid
+100248,2023-11-24,C0001,Accessories,Wireless Mouse,26.62,1,Paid
+101195,2023-11-23,C0002, Electronics ,Laptop X,1577,1,Paid
+100398,2023-11-29,C0019,Smart Home,NordLock Pro,201.64,1,Paid
+100865,2023-12-09,C0055,Electronics ,Tablet A,"772,98 EUR",1,Paid
+100601,2023-12-04,C0001, Accessories,Wireless Mouse,32,1,Pending
+100662,2023-12-05,C0004,Smart Home,NordLock Pro,"238,67 EUR",1,Paid
+100833,2023-12-08,C0027, Electronics ,NoiseCancel Headphones,"248,37 EUR",1,Paid
+101124,14/12/2023,C0197,Accessories,Screen Protector,"12,14 EUR",1,Paid
+100838,2023-12-08,C0003, Smart Home ,NordLock Pro,$188.83,1,Paid
+100034,16/11/2023,C0001, Accessories,Accessory Bundle,$34.22,2,Paid
+100089,2023-11-18,C0002, Accessories ,Screen Protector,12.91,1,Paid
+100357,2023-11-28,C0208,Electronics,Smartphone Z,1034.43,1,Paid
+100567,2023-12-03,C0001,Electronics,Tablet A,631.82,1,Paid
+100918,2023-12-10,C0035,Accessories,Accessory Bundle,98.54,1,Paid
+100517,02/12/2023,C0117,Accessories,Phone Case,33.43,1,Paid
+100085,18/11/2023,C0020, Accessories ,Charger,$45.43,2,Paid
+100773,2023-12-07,C0004,Electronics,Smartphone Z,"893,14 EUR",1,Paid
+100347,27/11/2023,C0006, Electronics ,TV Pro,937.66,2,Paid
+100539,2023-12-02,C0008,Electronics,TV Pro,$1441.81,1,Paid
+100132,2023-11-20,C0001, Electronics ,Laptop X,"1612,31 EUR",2,Paid
+100376,2023-11-28,C0006,Smart Home,NordLock Pro,224.20,1,Paid
+101034,12/12/2023,C0214, Accessories,Charger,15.36,2,Paid
+100616,2023-12-04,C0005,Accessories,Screen Protector,$5.04,1,Failed
+100822,2023-12-08,C0242,Smart Home,NordLock Pro,200.64,1,Paid
+100362,2023-11-28,C0004, Accessories,Charger,43.85,2,Paid
+100428,2023-11-29,C0027, Accessories,Accessory Bundle,"69,78 EUR",1,Paid
+101032,2023-12-12,C0125,Accessories,Phone Case,"38,23 EUR",2,Paid
+100342,2023-11-27,C0024,Accessories,Phone Case,"36,96 EUR",2,Paid
+100498,2023-12-01,C0013,Accessories,Screen Protector,9.20,1,Paid
+100758,2023-12-07,C0057,Smart Home,NordLock Pro,$239.23,1,Paid
+101020,12/12/2023,C0013, Accessories ,Screen Protector,12.92,1,Paid
+101146,03/12/2023,C0002,Smart Home,NordLock Pro,"192,26 EUR",1,Paid
+100734,06/12/2023,C0009,Smart Home,NordTherm,106.57,1,Failed
+100063,17/11/2023,C0046,Electronics,TV Pro,1698.27,1,Paid
+100636,04/12/2023,C0008, Accessories,Accessory Bundle,37.42,4,Paid
+100914,2023-12-10,C0118,Accessories,USB-C Cable,"14,98 EUR",1,Paid
+100468,2023-11-30,C0001,Electronics,TV Pro,"958,27 EUR",1,Paid
+100220,2023-11-24,C0073,Accessories,Accessory Bundle,"44,98 EUR",2,Paid
+100443,30/11/2023,C0009,Electronics,Tablet A,487.70,1,Paid
+100153,2023-11-21,C0106, Electronics ,Laptop X,1426.23,1,Paid
+100326,2023-11-27,C0019,Smart Home,NordLock Pro,"238,66 EUR",1,Paid
+100308,2023-11-26,C0301, Accessories,Charger,42,1,Paid
+100859,2023-12-09,C0047,Electronics ,TV Pro,1295.10,1,Paid
+100613,2023-12-04,C0005,Electronics,Smartphone Z,"701,94 EUR",1,Paid
+100585,2023-12-03,C0067, Smart Home ,NordTherm,84.35,1,Paid
+100606,2023-12-04,C0003,Accessories,Screen Protector,5,2,Paid
+100204,23/11/2023,C0239,Electronics,NoiseCancel Headphones,204.43,1,Paid
+100772,07/12/2023,C0001, Accessories,Charger,43.23,1,Paid
+100399,29/11/2023,C0262,Electronics,NoiseCancel Headphones,186.48,1,Paid
+100005,15/11/2023,C0003,Electronics,Tablet A,"553,75 EUR",1,Paid
+101147,2023-11-24,C0276, Smart Home ,NordLock Pro,205.21,1,Paid
+100893,2023-12-10,C0224, Accessories ,Accessory Bundle,47.39,1,Paid
+100900,2023-12-10,C0001, Accessories ,USB-C Cable,"11,88 EUR",1,Paid
+100130,2023-11-20,C0271,Electronics,Laptop X,"1 394,09 EUR",1,Paid
+100701,06/12/2023,C0120,Accessories,USB-C Cable,"17,86 EUR",2,Paid
+100845,09/12/2023,C0001, Smart Home ,NordLock Pro,"202,58 EUR",1,Paid
+100994,12/12/2023,C0023,Smart Home,NordLock Pro,$192.70,1,Paid
+100458,2023-11-30,C0030,Smart Home,NordLock Pro,$214.91,1,Paid
+100072,2023-11-18,C0001, Accessories,Phone Case,25,1,Paid
+101053,13/12/2023,C0004,Electronics,TV Pro,"1 346,87 EUR",1,Paid
+100672,2023-12-05,C0007,Electronics,NoiseCancel Headphones,196,1,Paid
+100656,05/12/2023,C0001,Smart Home,NordLock Pro,210,1,Paid
+101164,29/11/2023,C0296,Accessories,Accessory Bundle,"52,01 EUR",2,Paid
+100262,2023-11-25,C0033, Electronics ,Smartphone Z,948.32,1,Paid
+101043,13/12/2023,C0002,Accessories,Accessory Bundle,"46,99 EUR",2,Paid
+100538,02/12/2023,C0007, Accessories,Accessory Bundle,"82,45 EUR",2,Paid
+100203,23/11/2023,C0079, Accessories ,USB-C Cable,11.15,1,Paid
+101152,2023-11-24,C0126,Accessories,USB-C Cable,"9,10 EUR",1,Paid
+100071,2023-11-17,C0035,Accessories,USB-C Cable,15,4,Paid
+101128,14/12/2023,C0283,Electronics,TV Pro,1490.50,1,Paid
+100954,2023-12-11,C0187,Accessories,Accessory Bundle,"97,99 EUR",2,Paid
+100128,2023-11-20,C0120,Accessories,Phone Case,33.65,1,Paid
+100371,28/11/2023,C0013,Electronics,Smartphone Z,"922,19 EUR",1,Paid
+100135,20/11/2023,C0098,Electronics,Laptop X,1417.96,1,Paid
+100485,01/12/2023,C0060,Electronics ,NoiseCancel Headphones,327.51,1,Paid
+100816,2023-12-08,C0031,Smart Home,NordLock Pro,"207,28 EUR",1,Paid
+100222,2023-11-24,C0070, Accessories ,Wireless Mouse,"39,86 EUR",1,Paid
+101093,2023-12-14,C0001,Electronics,NoiseCancel Headphones,"307,32 EUR",1,Paid
+101050,13/12/2023,C0012, Electronics ,NoiseCancel Headphones,"223,42 EUR",1,Paid
+101129,2023-12-14,C0001,Electronics,TV Pro,$932.28,1,Paid
+100697,06/12/2023,C0001,Electronics,TV Pro,$1320.84,2,Paid
+100657,2023-12-05,C0001, Smart Home ,NordPlug,31.03,1,Failed
+100406,2023-11-29,C0143,Electronics,Tablet A,349.95,1,Paid
+100736,2023-12-06,C0002,Smart Home,NordTherm,"85,29 EUR",1,Paid
+100531,02/12/2023,C0004,Accessories,Wireless Mouse,23.82,1,Paid
+101090,14/12/2023,C0002,Smart Home,NordLock Pro,219.32,1,Paid
+100602,2023-12-04,C0007,Electronics ,Tablet A,"529,46 EUR",1,Paid
+100211,2023-11-23,C0005, Electronics ,Smartphone Z,988,1,Paid
+100388,28/11/2023,C0001,Electronics,Tablet A,$599.27,2,Paid
+101158,2023-12-04,C0040,Accessories,USB-C Cable,13,3,Paid
+100711,2023-12-06,C0010, Accessories,Wireless Mouse,"29,11 EUR",1,Paid
+100848,2023-12-09,C0007, Accessories,Accessory Bundle,83,2,Paid
+100263,2023-11-25,C0001,Electronics ,Smartphone Z,"740,02 EUR",1,Paid
+100305,2023-11-26,C0160, Accessories,Charger,17.05,3,Paid
+100283,25/11/2023,C0003,Electronics,NoiseCancel Headphones,$343.43,1,Paid
+100997,12/12/2023,C0001, Electronics ,Smartphone Z,"706,88 EUR",1,Paid
+101119,14/12/2023,C0064,Smart Home,NordLock Pro,188.97,2,Paid
+100465,30/11/2023,C0081,Accessories,Accessory Bundle,62.27,1,Paid
+100340,27/11/2023,C0059,Accessories,Accessory Bundle,26.09,2,Paid
+100337,2023-11-27,C0009, Accessories ,Screen Protector,"6,38 EUR",1,Pending
+100156,2023-11-21,C0003, Electronics ,TV Pro,1131.22,1,Failed
+100513,2023-12-01,C0001,Smart Home,NordPlug,18.39,1,Paid
+100808,08/12/2023,C0028, Smart Home ,NordLock Pro,"193,67 EUR",1,Paid
+100646,2023-12-04,C0102, Accessories,USB-C Cable,"18,98 EUR",1,Paid
+100540,02/12/2023,C0035,Electronics,TV Pro,978.66,1,Paid
+100074,2023-11-18,C0129,Smart Home,NordLock Pro,227.10,1,Paid
+100044,2023-11-16,C0003,Electronics,NoiseCancel Headphones,207.57,1,Paid
+101198,2023-12-13,C0013,Accessories,Wireless Mouse,26.47,2,Paid
+100776,2023-12-07,C0093,Accessories,Screen Protector,10.13,3,Paid
+100801,08/12/2023,C0318,Accessories,Phone Case,30.35,4,Paid
+100627,2023-12-04,C0022, Accessories,Screen Protector,8.38,1,Paid
+100795,2023-12-07,C0002, Accessories,USB-C Cable,"9,83 EUR",1,Paid
+100569,2023-12-03,C0001,Accessories,Charger,28,1,Paid
+100254,2023-11-24,C0084,Electronics,Smartphone Z,906.32,1,Paid
+101003,2023-12-12,C0003,Smart Home,NordLock Pro,217.71,2,Paid
+100097,19/11/2023,C0001,Smart Home,NordLock Pro,$205.02,1,Paid
+100279,25/11/2023,C0002, Electronics ,Tablet A,"791,92 EUR",1,Paid
+100710,2023-12-06,C0181, Electronics ,Laptop X,$1439.35,1,Paid
+100296,2023-11-26,C0028,Electronics ,TV Pro,1020.82,1,Paid
+100723,2023-12-06,C0020,Accessories,Laptop Sleeve,"15,59 EUR",2,Paid
+100346,2023-11-27,C0001,Smart Home,NordLock Pro,210.90,1,Paid
+100655,2023-12-05,C0023,Accessories,Accessory Bundle,"59,55 EUR",1,Paid
+100099,2023-11-19,C0001,Electronics,TV Pro,$926.93,1,Paid
+100470,2023-11-30,C0200,Smart Home,NordLock Pro,"189,66 EUR",1,Paid
+100504,2023-12-01,C0037,Accessories,Charger,42.66,1,Paid
+100075,2023-11-18,C0022,Accessories,Wireless Mouse,"44,32 EUR",2,Paid
+100266,25/11/2023,C0007,Smart Home,NordCam Mini,"94,60 EUR",1,Paid
+101004,12/12/2023,C0030,Accessories,Charger,"19,80 EUR",3,Paid
+100131,20/11/2023,C0004, Accessories ,Screen Protector,12.93,1,Paid
+100509,2023-12-01,C0015,Accessories,USB-C Cable,16.14,1,Paid
+100064,17/11/2023,C0012, Accessories ,Phone Case,12,1,Paid
+100012,2023-11-15,C0005,Electronics,Laptop X,1546,2,Paid
+101192,2023-11-25,C0003,Electronics,Smartphone Z,1056.70,1,Paid
+100356,2023-11-28,C0037,Electronics,Tablet A,"556,99 EUR",1,Paid
+100028,2023-11-16,C0253, Accessories ,Laptop Sleeve,29.42,1,Paid
+100923,2023-12-10,C0022,Electronics,Smartphone Z,"711,15 EUR",1,Paid
+100766,07/12/2023,C0034, Electronics ,Tablet A,715,1,Paid
+100784,2023-12-07,C0019,Accessories,USB-C Cable,19.73,1,Paid
+100425,2023-11-29,C0002,Accessories,USB-C Cable,$9.35,1,Pending
+100025,16/11/2023,C0001,Electronics,TV Pro,"929,16 EUR",1,Paid
+100959,2023-12-11,C0028, Electronics ,TV Pro,1060.75,1,Paid
+100331,2023-11-27,C0058,Electronics ,TV Pro,"1 145,46 EUR",1,Paid
+101196,29/11/2023,C0003, Accessories,Laptop Sleeve,36.68,2,Paid
+100403,2023-11-29,C0025,Smart Home,NordLock Pro,190.38,1,Paid
+100192,2023-11-23,C0003, Accessories ,Wireless Mouse,"56,45 EUR",1,Paid
+100626,04/12/2023,C0001,Electronics,Tablet A,"503,52 EUR",1,Failed
+100651,2023-12-05,C0002,Electronics ,Smartphone Z,966.41,1,Paid
+100129,20/11/2023,C0051,Smart Home,NordLock Pro,$247.01,1,Paid
+100678,2023-12-05,C0033, Smart Home ,NordLock Pro,229.79,1,Paid
+101133,14/12/2023,C0042,Electronics,TV Pro,1610.06,1,Paid
+100169,2023-11-22,C0006,Electronics,NoiseCancel Headphones,"333,41 EUR",1,Paid
+100287,25/11/2023,C0072, Accessories,Charger,$17.47,1,Paid
+100383,2023-11-28,C0237,Smart Home,NordLock Pro,$208.61,2,Paid
+100940,2023-12-11,C0002,Electronics,TV Pro,"1 465,79 EUR",1,Paid
+100924,2023-12-10,C0087, Accessories,Accessory Bundle,"77,62 EUR",2,Paid
+101102,14/12/2023,C0002,Electronics,NoiseCancel Headphones,"227,69 EUR",1,Paid
+100857,2023-12-09,C0001, Electronics ,NoiseCancel Headphones,150.30,1,Paid
+101086,2023-12-14,C0007, Smart Home ,NordLock Pro,220.54,1,Paid
+100536,2023-12-02,C0001,Accessories,USB-C Cable,14,1,Paid
+100015,15/11/2023,C0013,Accessories,Laptop Sleeve,"28,15 EUR",1,Paid
+100420,2023-11-29,C0001,Accessories,Phone Case,"18,25 EUR",4,Paid
+100189,22/11/2023,C0001,Electronics,Laptop X,1507.54,2,Paid
+101107,14/12/2023,C0003,Electronics,NoiseCancel Headphones,183.96,1,Paid
+101024,2023-12-12,C0003,Smart Home,NordLock Pro,226.20,1,Paid
+100437,2023-11-30,C0008,Electronics,Tablet A,$355.20,1,Paid
+101025,12/12/2023,C0120,Accessories,Charger,29,1,Paid
+100769,07/12/2023,C0050,Electronics,NoiseCancel Headphones,"282,69 EUR",1,Paid
+100375,2023-11-28,C0009, Accessories,Phone Case,"35,08 EUR",3,Paid
+100373,2023-11-28,C0024,Accessories,USB-C Cable,$17.66,1,Paid
+100591,2023-12-03,C0017, Smart Home ,NordLock Pro,"239,52 EUR",1,Paid
+100675,05/12/2023,C0002,Accessories,Charger,46.60,1,Paid
+100417,2023-11-29,C0078,Accessories,Screen Protector,"6,53 EUR",1,Paid
+100195,23/11/2023,C0037,Smart Home,NordLock Pro,"181,85 EUR",1,Paid
+100450,30/11/2023,C0002, Accessories,Screen Protector,11.57,2,Paid
+100810,08/12/2023,C0002,Smart Home,NordLock Pro,180.92,1,Paid
+100775,2023-12-07,C0001, Accessories,USB-C Cable,"13,71 EUR",1,Paid
+100962,2023-12-11,C0006, Smart Home ,NordLock Pro,190.08,1,Paid
+101039,2023-12-12,C0001,Smart Home,NordLock Pro,"219,18 EUR",1,Paid
+100408,29/11/2023,C0005,Accessories,Laptop Sleeve,44.52,3,Paid
+100397,29/11/2023,C0007,Smart Home,NordLock Pro,199.29,1,Pending
+100615,04/12/2023,C0011,Electronics ,NoiseCancel Headphones,$262.06,1,Paid
+100963,2023-12-11,C0024,Smart Home,NordLock Pro,206,1,Paid
+100749,07/12/2023,C0256, Accessories ,Phone Case,"14,51 EUR",4,Paid
+100863,09/12/2023,C0011,Smart Home,NordLock Pro,"192,18 EUR",1,Paid
+100193,23/11/2023,C0010,Electronics,Tablet A,"752,45 EUR",1,Paid
+100150,2023-11-21,C0002, Electronics ,NoiseCancel Headphones,"227,04 EUR",1,Paid
+100688,05/12/2023,C0006,Electronics,Tablet A,"644,02 EUR",1,Paid
+100791,2023-12-07,C0002,Electronics ,Tablet A,$636.80,1,Paid
+100740,07/12/2023,C0047,Electronics,Smartphone Z,712.48,1,Paid
+100300,2023-11-26,C0009, Accessories ,Phone Case,"18,67 EUR",3,Paid
+100708,2023-12-06,C0003,Electronics ,Tablet A,"612,79 EUR",1,Paid
+100950,2023-12-11,C0258,Electronics,NoiseCancel Headphones,"200,27 EUR",1,Paid
+100241,2023-11-24,C0065,Smart Home,NordPlug,32.73,1,Paid
+100200,2023-11-23,C0063,Electronics,Tablet A,714.86,1,Paid
+100046,2023-11-17,C0009,Electronics,TV Pro,$1312.23,1,Paid
+100713,2023-12-06,C0030, Smart Home ,NordLock Pro,239,1,Paid
+100588,2023-12-03,C0016, Accessories ,Wireless Mouse,40,1,Paid
+100138,20/11/2023,C0001, Accessories,Wireless Mouse,"59,52 EUR",1,Paid
+101099,2023-12-14,C0008,Electronics,Laptop X,1431.88,1,Pending
+100534,2023-12-02,C0018,Accessories,Screen Protector,$14.10,1,Paid
+100661,2023-12-05,C0029,Smart Home,NordLock Pro,247,2,Paid
+100781,2023-12-07,C0003,Accessories,Charger,$36.62,2,Paid
+100665,2023-12-05,C0004,Accessories,Screen Protector,"5,76 EUR",1,Paid
+101120,2023-12-14,C0001,Smart Home,NordLock Pro,226,1,Paid
+100382,28/11/2023,C0147, Accessories,Charger,"39,53 EUR",2,Paid
+100642,2023-12-04,C0022, Accessories,Phone Case,"19,39 EUR",3,Paid
+101182,2023-11-30,C0303,Accessories,Wireless Mouse,23,1,Paid
+100449,2023-11-30,C0003,Smart Home,NordLock Pro,239.22,1,Paid
+100511,2023-12-01,C0001,Accessories,Laptop Sleeve,"42,01 EUR",2,Paid
+100424,2023-11-29,C0006,Accessories,USB-C Cable,"8,80 EUR",1,Paid
+100007,15/11/2023,C0003,Accessories,Phone Case,28.53,1,Paid
+100098,2023-11-19,C0019,Electronics,TV Pro,$1266.38,1,Paid
+100411,2023-11-29,C0065, Electronics ,Tablet A,"440,32 EUR",1,Pending
+100159,2023-11-21,C0012,Electronics,Tablet A,"394,06 EUR",1,Paid
+100919,2023-12-10,C0001,Electronics ,TV Pro,"970,60 EUR",1,Paid
+100653,2023-12-05,C0020,Accessories,Screen Protector,9.37,2,Paid
+100033,2023-11-16,C0007,Electronics,Tablet A,615,1,Paid
+100799,2023-12-08,C0011,Smart Home,NordPlug,"24,63 EUR",1,Paid
+100760,2023-12-07,C0002,Electronics ,Tablet A,"520,14 EUR",1,Paid
+100522,2023-12-02,C0003,Accessories,Charger,"39,36 EUR",1,Paid
+100335,2023-11-27,C0040,Electronics,Smartphone Z,1004.81,1,Paid
+100491,01/12/2023,C0001,Accessories,Accessory Bundle,45.49,2,Paid
+100259,2023-11-24,C0013,Electronics,Smartphone Z,718.54,1,Paid
+100172,2023-11-22,C0007, Accessories,Laptop Sleeve,39.84,1,Paid
+101108,2023-12-14,C0024, Accessories,Laptop Sleeve,"19,89 EUR",4,Pending
+100548,2023-12-02,C0001, Electronics ,TV Pro,"1184,65 EUR",1,Paid
+100237,2023-11-24,C0301, Accessories ,Laptop Sleeve,38.99,1,Paid
+100385,2023-11-28,C0015,Accessories,Laptop Sleeve,"24,00 EUR",3,Paid
+100659,2023-12-05,C0008,Accessories,Charger,"40,01 EUR",1,Paid
+100024,2023-11-16,C0002, Accessories,Charger,"25,01 EUR",1,Paid
+100809,2023-12-08,C0158, Electronics ,Laptop X,"1 730,99 EUR",1,Paid
+101012,2023-12-12,C0001,Electronics,Laptop X,"1535,84 EUR",1,Failed
+100885,09/12/2023,C0010, Electronics ,TV Pro,"947,14 EUR",1,Paid
+100546,02/12/2023,C0079,Accessories,USB-C Cable,"9,98 EUR",1,Paid
+100641,04/12/2023,C0015,Accessories,Laptop Sleeve,33.86,3,Paid
+100478,2023-11-30,C0003,Electronics,TV Pro,"1393,62 EUR",1,Paid
+101178,2023-12-13,C0001, Accessories ,Charger,46.12,2,Paid
+100680,2023-12-05,C0001,Electronics,Laptop X,1719,1,Paid
+100830,2023-12-08,C0016, Accessories ,Laptop Sleeve,39,1,Paid
+100154,21/11/2023,C0014,Accessories,Accessory Bundle,46.00,1,Paid
+100123,2023-11-20,C0314, Accessories,Laptop Sleeve,"33,17 EUR",1,Paid
+100698,2023-12-06,C0001,Electronics,TV Pro,1205,1,Paid
+100121,19/11/2023,C0113,Smart Home,NordPlug,"23,36 EUR",2,Paid
+100904,10/12/2023,C0149,Electronics ,TV Pro,1184.42,1,Paid
+100464,2023-11-30,C0001,Accessories,Laptop Sleeve,20,2,Paid
+101121,14/12/2023,C0067,Electronics,TV Pro,"928,65 EUR",1,Paid
+100628,2023-12-04,C0187, Accessories ,Wireless Mouse,"19,96 EUR",1,Paid
+101075,2023-12-13,C0002,Smart Home,NordCam Mini,"62,13 EUR",1,Paid
+100985,2023-12-11,C0086,Electronics,Tablet A,"783,57 EUR",1,Paid
+100520,2023-12-02,C0021,Accessories,USB-C Cable,10.00,1,Paid
+100951,11/12/2023,C0054, Accessories,Accessory Bundle,"96,87 EUR",2,Paid
+100966,2023-12-11,C0035, Accessories,Phone Case,"16,30 EUR",1,Paid
+101177,2023-11-28,C0037,Electronics,Tablet A,"556,99 EUR",1,Paid
+100587,2023-12-03,C0001,Accessories,Screen Protector,$10.14,2,Paid
+101046,13/12/2023,C0273, Accessories ,Charger,"34,08 EUR",1,Paid
+100787,2023-12-07,C0003,Electronics,NoiseCancel Headphones,"273,02 EUR",1,Pending
+100523,2023-12-02,C0025, Electronics ,Smartphone Z,940.92,1,Paid
+100358,2023-11-28,C0001, Accessories,Wireless Mouse,56.52,1,Paid
+100949,11/12/2023,C0046, Smart Home ,NordLock Pro,204.69,1,Paid
+101041,13/12/2023,C0002, Smart Home ,NordLock Pro,219.45,1,Paid
+100151,2023-11-21,C0002,Electronics ,Smartphone Z,"752,21 EUR",1,Paid
+100529,2023-12-02,C0017,Electronics,Tablet A,326,1,Paid
+100181,2023-11-22,C0001,Electronics ,NoiseCancel Headphones,185.90,1,Pending
+100292,2023-11-25,C0082,Electronics,NoiseCancel Headphones,"258,19 EUR",2,Paid
+100650,2023-12-05,C0054,Smart Home,NordLock Pro,213.11,1,Paid
+100867,2023-12-09,C0029, Smart Home ,NordLock Pro,"209,05 EUR",1,Paid
+100175,2023-11-22,C0002, Accessories ,Laptop Sleeve,"27,74 EUR",1,Paid
+100743,2023-12-07,C0097,Accessories,Laptop Sleeve,20.81,1,Paid
+100258,2023-11-24,C0099,Smart Home,NordLock Pro,"214,74 EUR",1,Paid
+100692,2023-12-06,C0206, Electronics ,Laptop X,"1 379,55 EUR",1,Paid
+100862,2023-12-09,C0003,Accessories,USB-C Cable,"17,87 EUR",1,Paid
+100022,2023-11-16,C0003,Electronics ,NoiseCancel Headphones,"176,57 EUR",1,Paid
+101013,2023-12-12,C0001, Accessories ,USB-C Cable,13,3,Paid
+101149,06/12/2023,C0009,Smart Home,NordTherm,106.57,1,Failed
+100783,2023-12-07,C0211,Smart Home,NordLock Pro,"183,60 EUR",1,Pending
+100482,30/11/2023,C0007,Electronics,NoiseCancel Headphones,"176,13 EUR",1,Paid
+100475,2023-11-30,C0222,Electronics,NoiseCancel Headphones,"254,73 EUR",1,Paid
+100804,2023-12-08,C0006, Accessories ,Laptop Sleeve,"29,83 EUR",3,Paid
+100119,2023-11-19,C0001,Accessories,Accessory Bundle,27,2,Paid
+100179,2023-11-22,C0004,Electronics,Laptop X,1755.32,2,Paid
+101159,2023-12-12,C0003,Electronics,NoiseCancel Headphones,"308,13 EUR",1,Paid
+100338,27/11/2023,C0003,Electronics,NoiseCancel Headphones,"321,06 EUR",1,Paid
+101019,12/12/2023,C0002, Accessories,Accessory Bundle,75,2,Paid
+100298,2023-11-26,C0006,Electronics ,NoiseCancel Headphones,236.41,1,Paid
+101200,2023-12-11,C0024,Smart Home,NordLock Pro,206,1,Paid
+101118,2023-12-14,C0001,Accessories,Accessory Bundle,"78,76 EUR",2,Paid
+100110,2023-11-19,C0001,Electronics,Smartphone Z,"1007,22 EUR",1,Paid
+100414,2023-11-29,C0001,Accessories,Screen Protector,8.16,3,Paid
+101111,2023-12-14,C0002, Smart Home ,NordLock Pro,227,1,Paid
+100543,02/12/2023,C0270,Smart Home,NordLock Pro,"190,15 EUR",1,Paid
+100888,2023-12-09,C0001,Electronics ,Smartphone Z,"897,04 EUR",1,Paid
+100306,2023-11-26,C0012,Smart Home,NordCam Mini,75,2,Paid
+100968,2023-12-11,C0106,Electronics,Laptop X,1406.83,1,Paid
+100921,10/12/2023,C0002,Smart Home,NordPlug,16.05,1,Paid
+100021,2023-11-15,C0006,Smart Home,NordTherm,138.07,1,Paid
+100981,11/12/2023,C0014,Electronics,Tablet A,543.89,1,Paid
+100671,2023-12-05,C0010,Smart Home,NordLock Pro,$228.29,1,Paid
+101130,14/12/2023,C0002, Accessories,Laptop Sleeve,19,1,Paid
+100102,2023-11-19,C0010, Accessories ,Laptop Sleeve,"24,31 EUR",1,Paid
+100140,2023-11-21,C0199,Smart Home,NordLock Pro,"222,11 EUR",1,Paid
+100224,2023-11-24,C0001,Electronics,TV Pro,"1 442,67 EUR",1,Paid
+100922,10/12/2023,C0053,Accessories,Charger,35.94,3,Paid
+100553,2023-12-02,C0019, Smart Home ,NordLock Pro,188.09,1,Paid
+100394,28/11/2023,C0016,Electronics,TV Pro,"1256,68 EUR",1,Paid
+100461,2023-11-30,C0076, Electronics ,Smartphone Z,989.24,2,Paid
+100856,2023-12-09,C0001,Accessories,Accessory Bundle,40.96,1,Paid
+100720,2023-12-06,C0002, Smart Home ,NordLock Pro,208,1,Failed
+100206,2023-11-23,C0002, Electronics ,Laptop X,1577,1,Paid
+100912,10/12/2023,C0001,Electronics,Tablet A,342.14,1,Paid
+100589,03/12/2023,C0320,Accessories,USB-C Cable,"12,34 EUR",1,Paid
+100038,2023-11-16,C0002, Accessories,Phone Case,$12.88,2,Paid
+101017,12/12/2023,C0002, Accessories,Laptop Sleeve,$21.14,1,Failed
+100361,28/11/2023,C0004, Smart Home ,NordLock Pro,"246,71 EUR",1,Paid
+101069,2023-12-13,C0004,Accessories,Accessory Bundle,"82,41 EUR",1,Paid
+100574,2023-12-03,C0071,Electronics ,Smartphone Z,819.94,1,Paid
+101089,2023-12-14,C0107, Electronics ,TV Pro,"1 209,60 EUR",1,Paid
+100596,2023-12-04,C0158, Accessories,Charger,19.56,1,Paid
+100125,20/11/2023,C0001, Accessories ,Accessory Bundle,"52,50 EUR",2,Paid
+100624,2023-12-04,C0001,Smart Home,NordCam Mini,91,1,Paid
+100396,29/11/2023,C0296,Accessories,Accessory Bundle,"52,01 EUR",2,Paid
+100897,10/12/2023,C0110,Smart Home,NordLock Pro,$245.24,1,Paid
+100185,22/11/2023,C0001, Smart Home ,NordTherm,127.55,1,Paid
+100056,17/11/2023,C0014,Accessories,Charger,"15,88 EUR",3,Paid
+100882,2023-12-09,C0003,Electronics,TV Pro,$1195.36,1,Paid
+101027,2023-12-12,C0001,Smart Home,NordLock Pro,244,1,Paid
+101112,14/12/2023,C0001, Accessories,Laptop Sleeve,23.93,1,Paid
+100166,2023-11-22,C0203, Accessories,USB-C Cable,16.30,3,Paid
+101014,12/12/2023,C0291,Smart Home,NordLock Pro,200,2,Paid
+100116,2023-11-19,C0009,Electronics ,Smartphone Z,"1065,43 EUR",1,Paid
+100311,2023-11-26,C0191,Electronics,NoiseCancel Headphones,318,1,Paid
+100909,2023-12-10,C0080, Electronics ,TV Pro,"1355,85 EUR",1,Paid
+100476,2023-11-30,C0016,Smart Home,NordLock Pro,"223,28 EUR",1,Paid
+100421,2023-11-29,C0003, Accessories,Screen Protector,"14,39 EUR",1,Paid
+100199,23/11/2023,C0003,Electronics ,NoiseCancel Headphones,234,1,Paid
+100555,2023-12-02,C0038,Electronics ,NoiseCancel Headphones,"246,91 EUR",1,Paid
+101174,2023-11-29,C0008,Accessories,Screen Protector,8.41,3,Paid
+100219,2023-11-23,C0249,Electronics,Smartphone Z,903,1,Paid
+100212,2023-11-23,C0014, Accessories,Screen Protector,6.11,2,Paid
+100635,04/12/2023,C0003, Electronics ,Laptop X,$1648.66,1,Paid
+100840,2023-12-08,C0004, Accessories ,Wireless Mouse,18.18,1,Paid
+100727,2023-12-06,C0050,Electronics,Laptop X,1588.34,1,Paid
+100055,2023-11-17,C0002,Accessories,Accessory Bundle,"94,78 EUR",1,Pending
+100532,02/12/2023,C0078,Smart Home,NordLock Pro,185.66,2,Failed
+100815,2023-12-08,C0282,Smart Home,NordLock Pro,210.20,1,Paid
+100649,2023-12-05,C0300, Accessories ,Phone Case,16.63,1,Paid
+100908,2023-12-10,C0021, Accessories,Phone Case,17.63,1,Paid
+100571,2023-12-03,C0023,Electronics,Tablet A,$370.25,2,Paid
+100927,2023-12-10,C0062, Accessories ,Wireless Mouse,32.09,1,Paid
+100330,2023-11-27,C0006,Smart Home,NordLock Pro,$180.97,1,Paid
+100493,2023-12-01,C0260,Accessories,Charger,"36,46 EUR",2,Paid
+100691,06/12/2023,C0003,Electronics ,Smartphone Z,901.62,1,Paid
+100751,07/12/2023,C0001,Accessories,Phone Case,"13,03 EUR",1,Paid
+100832,08/12/2023,C0051,Accessories,Accessory Bundle,40.78,1,Paid
+100148,2023-11-21,C0001,Electronics,Smartphone Z,935.86,1,Pending
+100255,2023-11-24,C0034,Electronics ,NoiseCancel Headphones,"264,94 EUR",1,Paid
+100829,2023-12-08,C0013,Smart Home,NordLock Pro,"209,14 EUR",1,Paid
+100566,2023-12-03,C0064,Electronics,Laptop X,1695.77,1,Paid
+100393,2023-11-28,C0238,Electronics ,TV Pro,"1338,77 EUR",1,Paid
+100836,2023-12-08,C0181,Smart Home,NordCam Mini,"53,95 EUR",1,Paid
+101051,2023-12-13,C0002,Electronics,Laptop X,$1696.76,1,Paid
+100231,24/11/2023,C0001, Electronics ,NoiseCancel Headphones,"182,17 EUR",2,Paid
+100147,2023-11-21,C0006,Electronics,TV Pro,1399.86,1,Paid
+101153,2023-11-30,C0004,Electronics,NoiseCancel Headphones,"316,19 EUR",1,Paid
+100168,2023-11-22,C0021, Accessories,USB-C Cable,"7,78 EUR",1,Paid
+101185,2023-11-25,C0033, Electronics ,Smartphone Z,948.32,1,Paid
+100902,2023-12-10,C0004,Electronics,Smartphone Z,$1084.69,1,Paid
+100599,2023-12-04,C0001,Electronics,NoiseCancel Headphones,$308.58,1,Paid
+101055,2023-12-13,C0002,Smart Home,NordLock Pro,"246,13 EUR",1,Paid
+101011,12/12/2023,C0002,Electronics ,TV Pro,$1098.61,1,Paid
+100557,2023-12-03,C0003,Electronics,NoiseCancel Headphones,186.46,1,Paid
+100687,05/12/2023,C0006, Accessories ,Laptop Sleeve,"33,29 EUR",2,Paid
+100302,26/11/2023,C0057,Smart Home,NordCam Mini,$96.99,1,Failed
+100400,29/11/2023,C0003, Accessories,Laptop Sleeve,36.68,2,Paid
+100664,05/12/2023,C0012, Accessories ,Charger,$47.42,1,Paid
+100817,08/12/2023,C0002,Accessories,Phone Case,16.73,2,Paid
+100652,2023-12-05,C0011,Electronics,Tablet A,"314,93 EUR",1,Paid
+100163,2023-11-22,C0004,Accessories,Screen Protector,10.08,2,Paid
+100469,2023-11-30,C0001, Electronics ,NoiseCancel Headphones,260.09,1,Paid
+100762,2023-12-07,C0009,Electronics,NoiseCancel Headphones,"225,04 EUR",1,Paid
+100598,2023-12-04,C0070, Accessories,Wireless Mouse,"22,02 EUR",1,Paid
+101044,13/12/2023,C0001,Smart Home,NordLock Pro,"185,80 EUR",1,Paid
+100348,27/11/2023,C0220, Accessories ,Phone Case,"31,01 EUR",4,Paid
+100572,03/12/2023,C0002,Smart Home,NordLock Pro,"192,26 EUR",1,Paid
+100281,2023-11-25,C0017,Smart Home,NordCam Mini,"91,10 EUR",1,Paid
+100899,2023-12-10,C0001, Accessories,USB-C Cable,$8.25,1,Paid
+101070,13/12/2023,C0023,Smart Home,NordLock Pro,216.40,1,Paid
+100716,06/12/2023,C0036,Accessories,Charger,"44,54 EUR",4,Paid
+100010,2023-11-15,C0001,Accessories,Charger,"32,57 EUR",3,Paid
+100764,2023-12-07,C0006, Electronics ,Smartphone Z,"998,04 EUR",1,Paid
+100271,2023-11-25,C0008,Electronics,Laptop X,1718.34,1,Paid
+100984,11/12/2023,C0124,Electronics,NoiseCancel Headphones,"247,73 EUR",1,Paid
+100495,2023-12-01,C0004,Electronics ,Smartphone Z,$795.93,1,Paid
+101022,2023-12-12,C0076,Electronics,Tablet A,"565,36 EUR",1,Paid
+100286,2023-11-25,C0007,Electronics ,Tablet A,732.66,1,Paid
+100542,2023-12-02,C0077,Accessories,Laptop Sleeve,"41,10 EUR",1,Pending
+100977,2023-12-11,C0017,Smart Home,NordLock Pro,183,1,Paid
+100445,2023-11-30,C0001,Accessories,Accessory Bundle,"34,98 EUR",1,Paid
+101180,04/12/2023,C0015,Accessories,Laptop Sleeve,33.86,3,Paid
+100933,2023-12-11,C0003, Accessories,Laptop Sleeve,41.18,3,Paid
+101073,2023-12-13,C0015,Smart Home,NordLock Pro,"214,13 EUR",1,Paid
+100100,2023-11-19,C0143, Accessories,Charger,21.14,1,Paid
+100847,2023-12-09,C0136, Accessories,Laptop Sleeve,43.74,1,Paid
+100496,2023-12-01,C0032,Electronics,NoiseCancel Headphones,282,1,Paid
+100433,2023-11-29,C0027,Electronics,NoiseCancel Headphones,306.26,1,Paid
+100143,21/11/2023,C0002,Accessories,USB-C Cable,7.06,1,Paid
+101134,2023-12-14,C0002, Smart Home ,NordLock Pro,"200,59 EUR",2,Paid
+101197,2023-11-24,C0065,Smart Home,NordPlug,32.73,1,Paid
+100167,2023-11-22,C0001,Electronics,Tablet A,"499,07 EUR",1,Paid
+100162,2023-11-22,C0081,Electronics,TV Pro,1615.87,1,Paid
+100643,2023-12-04,C0005,Smart Home,NordLock Pro,"244,97 EUR",1,Paid
+100137,20/11/2023,C0001,Electronics ,NoiseCancel Headphones,260.84,2,Paid
+100878,09/12/2023,C0001, Accessories,Laptop Sleeve,"36,99 EUR",1,Paid
+100017,2023-11-15,C0003, Accessories,Charger,"26,91 EUR",1,Paid
+100114,2023-11-19,C0148,Electronics,Tablet A,"457,81 EUR",1,Paid
+100008,15/11/2023,C0001, Accessories ,Charger,36.45,3,Paid
+100196,2023-11-23,C0001,Electronics,Smartphone Z,"1016,16 EUR",1,Paid
+100866,2023-12-09,C0102,Electronics,NoiseCancel Headphones,"233,49 EUR",1,Paid
+100174,2023-11-22,C0001,Smart Home,NordLock Pro,"215,47 EUR",1,Paid
+100447,2023-11-30,C0001,Accessories,Accessory Bundle,60,1,Paid
+100101,2023-11-19,C0001,Accessories,Accessory Bundle,"49,17 EUR",1,Paid
+101092,14/12/2023,C0244,Smart Home,NordTherm,"83,17 EUR",1,Paid
+100580,03/12/2023,C0092,Accessories,Screen Protector,"7,07 EUR",2,Paid
+100474,30/11/2023,C0002,Accessories,Charger,"17,37 EUR",2,Paid
+100205,2023-11-23,C0024,Electronics,Laptop X,1339.22,1,Paid
+100581,2023-12-03,C0027,Electronics,NoiseCancel Headphones,"348,89 EUR",2,Paid
+100157,2023-11-21,C0027,Electronics,Smartphone Z,$787.19,2,Paid
+100894,10/12/2023,C0002, Smart Home ,NordLock Pro,"221,02 EUR",1,Paid
+101040,2023-12-12,C0015, Smart Home ,NordLock Pro,"195,56 EUR",1,Paid
+100486,2023-12-01,C0007, Smart Home ,NordLock Pro,237,2,Paid
+100645,2023-12-04,C0076,Smart Home,NordLock Pro,200.03,1,Paid
+101140,04/12/2023,C0042,Smart Home,NordLock Pro,"223,67 EUR",2,Paid
+100712,2023-12-06,C0007, Accessories,Phone Case,"16,50 EUR",3,Paid
+100928,2023-12-10,C0002,Smart Home,NordCam Mini,59.35,1,Paid
+101006,2023-12-12,C0187,Electronics,Tablet A,661.51,1,Paid
+100004,2023-11-15,C0019, Accessories,Phone Case,36.72,1,Paid
+100378,28/11/2023,C0229, Accessories ,Charger,16.51,1,Paid
+101021,2023-12-12,C0016,Smart Home,NordLock Pro,"182,28 EUR",1,Paid
+100359,2023-11-28,C0029,Electronics,TV Pro,1552.56,1,Paid
+100429,29/11/2023,C0001,Accessories,Laptop Sleeve,26,1,Paid
+100277,2023-11-25,C0008,Electronics,NoiseCancel Headphones,$172.79,1,Paid
+100267,2023-11-25,C0182,Smart Home,NordLock Pro,220.58,1,Paid
+100860,2023-12-09,C0009,Accessories,USB-C Cable,"7,49 EUR",1,Paid
+100943,11/12/2023,C0115,Accessories,Charger,15.61,1,Paid
+100230,24/11/2023,C0003,Smart Home,NordPlug,"30,79 EUR",1,Paid
+101038,12/12/2023,C0002,Electronics,Laptop X,"1674,10 EUR",1,Paid
+100719,2023-12-06,C0007,Electronics,NoiseCancel Headphones,"224,64 EUR",1,Paid
+101009,2023-12-12,C0001,Electronics ,NoiseCancel Headphones,"255,44 EUR",1,Pending
+100446,2023-11-30,C0026, Smart Home ,NordLock Pro,"219,40 EUR",1,Paid
+100761,2023-12-07,C0120,Accessories,Charger,"49,62 EUR",3,Paid
+100374,2023-11-28,C0001,Electronics,Tablet A,798.57,1,Paid
+100826,08/12/2023,C0001,Smart Home,NordLock Pro,$188.48,1,Paid
+100695,06/12/2023,C0260,Electronics,Laptop X,"1595,69 EUR",1,Paid
+100870,2023-12-09,C0005,Smart Home,NordLock Pro,"180,98 EUR",1,Paid
+100117,19/11/2023,C0001, Electronics ,Laptop X,1769.87,1,Pending
+100223,2023-11-24,C0114, Accessories,Laptop Sleeve,$15.24,1,Paid
+100459,2023-11-30,C0004, Accessories,Phone Case,13.42,1,Paid
+100618,2023-12-04,C0218,Accessories,Wireless Mouse,24.87,2,Paid
+101193,2023-12-12,C0187,Electronics,Tablet A,661.51,1,Paid
+100201,2023-11-23,C0030,Accessories,Phone Case,"36,25 EUR",1,Paid
+100550,2023-12-02,C0016,Accessories,Wireless Mouse,40.97,1,Paid
+100654,2023-12-05,C0019,Electronics,Tablet A,466,1,Paid
+100947,11/12/2023,C0177,Electronics,Laptop X,"1 501,09 EUR",1,Paid
+100343,27/11/2023,C0060,Accessories,USB-C Cable,20,4,Paid
+101083,13/12/2023,C0024,Accessories,USB-C Cable,7.31,2,Paid
+100632,2023-12-04,C0021,Electronics,Tablet A,331.45,1,Paid
+100006,2023-11-15,C0065,Electronics,Tablet A,"728,62 EUR",1,Paid
+100109,19/11/2023,C0001, Electronics ,NoiseCancel Headphones,"174,17 EUR",1,Paid
+100502,01/12/2023,C0038, Accessories ,Accessory Bundle,55.24,3,Paid
+100392,2023-11-28,C0026,Accessories,Charger,"28,59 EUR",1,Paid
+100942,2023-12-11,C0018,Smart Home,NordLock Pro,"228,75 EUR",1,Paid
+100518,2023-12-02,C0003, Smart Home ,NordTherm,$114.81,1,Paid
+100480,2023-11-30,C0001,Electronics ,Laptop X,"1688,15 EUR",1,Paid
+100800,08/12/2023,C0130, Electronics ,NoiseCancel Headphones,"218,36 EUR",1,Paid
+100035,2023-11-16,C0103,Electronics,Laptop X,1462,1,Paid
+100920,2023-12-10,C0013, Electronics ,Smartphone Z,"1052,91 EUR",2,Paid
+100009,15/11/2023,C0001,Electronics,NoiseCancel Headphones,"250,52 EUR",1,Paid
+100790,2023-12-07,C0041,Accessories,Laptop Sleeve,25,1,Paid
+100527,2023-12-02,C0028,Smart Home,NordLock Pro,"219,22 EUR",1,Failed
+100232,24/11/2023,C0252, Smart Home ,NordLock Pro,249,1,Paid
+100320,27/11/2023,C0001,Accessories,Laptop Sleeve,$41.30,2,Failed
+100441,2023-11-30,C0303,Accessories,Wireless Mouse,23,1,Paid
+100526,02/12/2023,C0010,Smart Home,NordLock Pro,196.94,1,Paid
+100625,2023-12-04,C0001,Accessories,Accessory Bundle,"75,73 EUR",1,Paid
+100611,2023-12-04,C0024,Accessories,Phone Case,"10,55 EUR",3,Paid
+100073,2023-11-18,C0001, Smart Home ,NordLock Pro,"230,39 EUR",1,Paid
+100349,27/11/2023,C0044,Electronics,NoiseCancel Headphones,"157,01 EUR",2,Paid
+100973,2023-12-11,C0001,Smart Home,NordLock Pro,$186.97,1,Paid
+100095,18/11/2023,C0028,Accessories,Phone Case,"27,74 EUR",1,Paid
+100544,2023-12-02,C0001,Accessories,USB-C Cable,15.85,4,Paid
+101169,2023-11-30,C0001,Accessories,Wireless Mouse,49.02,1,Paid
+100210,23/11/2023,C0002,Electronics,Tablet A,367.82,1,Paid
+100176,2023-11-22,C0007,Electronics,NoiseCancel Headphones,$163.31,1,Failed
+100481,2023-11-30,C0003, Accessories,Laptop Sleeve,22,1,Paid
+100282,25/11/2023,C0035,Electronics,NoiseCancel Headphones,"176,84 EUR",1,Paid
+100107,2023-11-19,C0001,Accessories,Accessory Bundle,$62.22,1,Paid
+101005,2023-12-12,C0003,Accessories,Wireless Mouse,"53,67 EUR",1,Paid
+100834,2023-12-08,C0001,Accessories,Charger,"39,15 EUR",2,Paid
+100252,2023-11-24,C0312,Accessories,Charger,26,1,Paid
+101166,2023-11-17,C0003,Electronics,Tablet A,336.05,2,Paid
+100390,2023-11-28,C0002,Accessories,Charger,30.55,2,Paid
+100929,2023-12-10,C0083,Accessories,Phone Case,$22.44,1,Paid
+100939,2023-12-11,C0001, Accessories ,USB-C Cable,$11.22,1,Paid
+100328,2023-11-27,C0001, Accessories,Phone Case,10.00,3,Paid
+100969,2023-12-11,C0006,Accessories,Screen Protector,$13.28,1,Paid
+100013,15/11/2023,C0261,Accessories,Laptop Sleeve,$33.90,2,Paid
+101026,2023-12-12,C0001,Electronics,Smartphone Z,"829,05 EUR",1,Paid
+100669,05/12/2023,C0002,Smart Home,NordPlug,"31,30 EUR",2,Paid
+101074,13/12/2023,C0048,Smart Home,NordLock Pro,235.67,1,Paid
+100937,11/12/2023,C0076,Electronics ,Smartphone Z,$889.83,1,Paid
+101076,2023-12-13,C0005,Smart Home,NordLock Pro,$187.08,1,Paid
+100934,2023-12-11,C0002,Accessories,Charger,"38,56 EUR",1,Paid
+100989,12/12/2023,C0040,Smart Home,NordLock Pro,185.28,2,Paid
+100214,23/11/2023,C0002,Smart Home,NordLock Pro,$212.69,1,Paid
+100217,2023-11-23,C0001,Electronics,Smartphone Z,"706,71 EUR",2,Paid
+100917,2023-12-10,C0007, Electronics ,TV Pro,$1563.41,1,Paid
+100614,2023-12-04,C0002, Accessories,Wireless Mouse,"28,43 EUR",1,Paid
+100823,2023-12-08,C0001,Smart Home,NordLock Pro,"229,47 EUR",1,Paid
+100423,29/11/2023,C0021,Accessories,Screen Protector,14.89,2,Paid
+100999,2023-12-12,C0052,Smart Home,NordLock Pro,"207,41 EUR",1,Paid
+100568,2023-12-03,C0083, Smart Home ,NordCam Mini,63.87,1,Paid
+100422,29/11/2023,C0001,Electronics,Laptop X,1419.85,1,Paid
+100069,2023-11-17,C0006,Accessories,Phone Case,34.42,2,Paid
+100554,2023-12-02,C0003,Accessories,Accessory Bundle,"84,79 EUR",4,Paid
+100086,18/11/2023,C0001,Electronics,TV Pro,"1344,25 EUR",1,Paid
+100247,2023-11-24,C0005,Smart Home,NordLock Pro,229.97,1,Paid
+100467,30/11/2023,C0001,Electronics ,Tablet A,"359,78 EUR",1,Paid
+100430,29/11/2023,C0099,Electronics,Smartphone Z,1003.81,2,Paid
+100418,2023-11-29,C0002,Electronics,Smartphone Z,$741.10,1,Paid
+100413,2023-11-29,C0094,Electronics,NoiseCancel Headphones,245,1,Paid
+100647,2023-12-05,C0071,Electronics,Smartphone Z,"796,55 EUR",1,Paid
+100197,23/11/2023,C0001,Electronics,Tablet A,"308,88 EUR",1,Paid
+100226,2023-11-24,C0002, Electronics ,TV Pro,1686.65,1,Paid
+100729,06/12/2023,C0003,Accessories,Charger,$21.85,2,Paid
+100285,2023-11-25,C0020,Electronics ,TV Pro,"1544,21 EUR",1,Paid
+100660,2023-12-05,C0014,Smart Home,NordCam Mini,$89.26,2,Paid
+100879,09/12/2023,C0030, Smart Home ,NordLock Pro,$202.78,1,Paid
+100112,2023-11-19,C0042,Smart Home,NordLock Pro,194,1,Paid
+100545,2023-12-02,C0032,Electronics,Laptop X,"1364,71 EUR",1,Paid
+101123,2023-12-14,C0002,Electronics,TV Pro,1327,1,Pending
+100993,2023-12-12,C0003, Electronics ,Tablet A,654.25,1,Paid
+100685,05/12/2023,C0034,Electronics,TV Pro,"1683,74 EUR",1,Paid
+100818,2023-12-08,C0033,Electronics,Smartphone Z,900.82,1,Paid
+100381,2023-11-28,C0073, Electronics ,Tablet A,"565,48 EUR",1,Paid
+100500,2023-12-01,C0002,Smart Home,NordLock Pro,214,1,Paid
+101042,13/12/2023,C0001,Smart Home,NordLock Pro,"245,35 EUR",1,Paid
+100926,2023-12-10,C0229,Smart Home,NordTherm,$126.44,1,Paid
+100780,2023-12-07,C0003, Accessories,Laptop Sleeve,"36,14 EUR",2,Paid
+100291,2023-11-25,C0003,Electronics,Smartphone Z,1056.70,1,Paid
+100389,2023-11-28,C0001,Smart Home,NordLock Pro,210.88,1,Paid
+100360,2023-11-28,C0001,Electronics,TV Pro,1020.44,1,Paid
+100407,2023-11-29,C0001,Electronics,Laptop X,$1506.44,1,Paid
+100365,2023-11-28,C0023,Electronics,TV Pro,"1015,17 EUR",1,Paid
+100525,02/12/2023,C0001, Electronics ,Smartphone Z,899,1,Paid
+100575,2023-12-03,C0203, Electronics ,TV Pro,1308.91,1,Paid
+100683,2023-12-05,C0187,Accessories,Accessory Bundle,"87,50 EUR",1,Pending
+101033,2023-12-12,C0002,Smart Home,NordLock Pro,208,2,Paid
+100694,2023-12-06,C0002, Electronics ,Tablet A,"362,00 EUR",1,Paid
+100705,06/12/2023,C0083,Smart Home,NordLock Pro,$203.62,1,Paid
+100702,2023-12-06,C0149,Electronics,NoiseCancel Headphones,203,1,Paid
+100113,2023-11-19,C0003, Accessories ,Laptop Sleeve,36.03,2,Paid
+100103,19/11/2023,C0005, Electronics ,Tablet A,647.19,1,Paid
+100415,2023-11-29,C0015,Electronics,NoiseCancel Headphones,327.37,1,Pending
+100590,2023-12-03,C0003,Electronics,Laptop X,"1488,81 EUR",1,Paid
+100191,2023-11-23,C0062,Electronics,Tablet A,"382,77 EUR",1,Paid
+101137,2023-12-14,C0014, Electronics ,Laptop X,"1653,81 EUR",1,Paid
+100957,2023-12-11,C0007, Accessories ,Accessory Bundle,"44,45 EUR",1,Paid
+100741,2023-12-07,C0015, Electronics ,NoiseCancel Headphones,$163.13,1,Paid
+100053,2023-11-17,C0003,Electronics,NoiseCancel Headphones,"266,47 EUR",1,Paid
+100029,16/11/2023,C0011,Accessories,Screen Protector,"8,60 EUR",1,Paid
+100066,2023-11-17,C0048,Electronics,Laptop X,1460,1,Paid
+100875,2023-12-09,C0016,Electronics,Tablet A,"496,60 EUR",1,Paid
+100246,2023-11-24,C0017,Accessories,Phone Case,"34,84 EUR",1,Paid
+100803,2023-12-08,C0241,Electronics,Tablet A,474.94,1,Paid
+101078,13/12/2023,C0006, Accessories ,Charger,"25,23 EUR",1,Paid
+101127,14/12/2023,C0001, Accessories ,Phone Case,"24,22 EUR",3,Paid
+100844,2023-12-08,C0067,Electronics,TV Pro,1183.75,1,Paid
+100595,2023-12-03,C0023,Electronics ,NoiseCancel Headphones,$265.61,1,Paid
+100309,2023-11-26,C0002, Accessories,Wireless Mouse,"54,66 EUR",4,Paid
+100903,2023-12-10,C0001,Smart Home,NordLock Pro,228.51,1,Paid
+100387,28/11/2023,C0001,Accessories,Phone Case,"39,44 EUR",2,Paid
+100872,09/12/2023,C0003,Electronics,Tablet A,696,1,Paid
+100355,2023-11-28,C0001,Electronics ,Smartphone Z,917.35,2,Paid
+101023,2023-12-12,C0001, Accessories,Charger,18.52,1,Paid
+100160,2023-11-21,C0001,Accessories,Screen Protector,13.38,1,Paid
+100187,2023-11-22,C0245,Accessories,USB-C Cable,"7,37 EUR",3,Paid
+100245,2023-11-24,C0041,Electronics,Laptop X,1469,1,Paid
+101056,2023-12-13,C0009,Electronics ,Laptop X,"1 727,39 EUR",1,Paid
+100076,2023-11-18,C0007,Electronics,Laptop X,1388.82,1,Paid
+100158,21/11/2023,C0228,Smart Home,NordCam Mini,93,1,Paid
+100127,20/11/2023,C0064,Accessories,Charger,"21,16 EUR",1,Paid
+100745,07/12/2023,C0004, Accessories ,Screen Protector,10.85,2,Paid
+100724,06/12/2023,C0002,Electronics,NoiseCancel Headphones,"172,37 EUR",1,Paid
+100323,2023-11-27,C0006,Accessories,Charger,$34.90,1,Paid
+100874,2023-12-09,C0001,Electronics,Laptop X,"1451,05 EUR",1,Paid
+101054,2023-12-13,C0114,Electronics,Laptop X,1363.58,1,Paid
+100805,08/12/2023,C0060, Electronics ,TV Pro,1323.10,1,Paid
+100213,2023-11-23,C0135, Electronics ,Tablet A,522.41,1,Paid
+100778,07/12/2023,C0001,Accessories,Laptop Sleeve,"27,03 EUR",2,Paid
+100104,2023-11-19,C0004,Electronics ,Laptop X,1568.65,1,Paid
+100754,2023-12-07,C0006,Accessories,Charger,"30,68 EUR",2,Paid
+101110,2023-12-14,C0001, Electronics ,Tablet A,386.48,1,Paid
+100960,2023-12-11,C0001,Electronics ,TV Pro,$969.19,1,Paid
+100846,2023-12-09,C0054,Accessories,Laptop Sleeve,"41,46 EUR",3,Paid
+101194,14/12/2023,C0042,Electronics,TV Pro,1610.06,1,Paid
+100521,02/12/2023,C0002,Smart Home,NordPlug,"16,97 EUR",1,Paid
+101136,2023-12-14,C0007,Electronics,Smartphone Z,"1070,71 EUR",2,Paid
+100771,07/12/2023,C0030,Accessories,Laptop Sleeve,20.44,2,Paid
+100229,2023-11-24,C0002,Accessories,Phone Case,"10,91 EUR",2,Paid
+100750,2023-12-07,C0003,Smart Home,NordLock Pro,"190,45 EUR",2,Paid
+100274,25/11/2023,C0012,Electronics,Laptop X,"1 700,98 EUR",1,Paid
+100876,2023-12-09,C0007, Accessories ,USB-C Cable,16.85,3,Paid
+100183,22/11/2023,C0094,Smart Home,NordLock Pro,$221.01,1,Paid
+100975,11/12/2023,C0001, Smart Home ,NordLock Pro,"187,04 EUR",1,Failed
+101016,2023-12-12,C0001,Electronics,TV Pro,1462.11,1,Paid
+100198,2023-11-23,C0156,Electronics,NoiseCancel Headphones,"296,85 EUR",1,Paid
+100794,07/12/2023,C0038,Electronics,Tablet A,$588.66,1,Paid
+100670,2023-12-05,C0024,Electronics,NoiseCancel Headphones,250.75,1,Paid
+100463,2023-11-30,C0013, Accessories ,USB-C Cable,"8,39 EUR",1,Paid
+100452,30/11/2023,C0072,Electronics,Smartphone Z,983.68,1,Paid
+100090,18/11/2023,C0003,Electronics ,Smartphone Z,"717,75 EUR",1,Paid
+101139,27/11/2023,C0044,Electronics,NoiseCancel Headphones,"157,01 EUR",2,Paid
+101096,14/12/2023,C0086,Smart Home,NordCam Mini,"85,43 EUR",1,Paid
+100487,2023-12-01,C0240, Accessories ,Accessory Bundle,"27,89 EUR",1,Paid
+100051,2023-11-17,C0006,Electronics,Tablet A,"740,00 EUR",1,Paid
+100700,2023-12-06,C0001,Electronics,Tablet A,549.96,1,Failed
+100854,2023-12-09,C0084, Accessories,Wireless Mouse,26,1,Paid
+100416,2023-11-29,C0125, Accessories,Laptop Sleeve,39.40,3,Paid
+100677,05/12/2023,C0207,Electronics,Smartphone Z,"735,52 EUR",1,Paid
+100367,28/11/2023,C0016,Electronics,Tablet A,"740,02 EUR",1,Paid
+100535,02/12/2023,C0001, Smart Home ,NordLock Pro,"220,39 EUR",1,Paid
+100831,08/12/2023,C0042,Electronics,Laptop X,1620.72,1,Paid
+100235,2023-11-24,C0002,Electronics,Tablet A,386.12,1,Paid
+100490,01/12/2023,C0001, Accessories ,Laptop Sleeve,34.29,1,Paid
+100681,2023-12-05,C0002,Electronics,Laptop X,$1495.01,1,Paid
+101007,2023-12-12,C0008,Electronics,Tablet A,"332,54 EUR",1,Paid
+100868,2023-12-09,C0002,Smart Home,NordLock Pro,187,2,Paid
+100582,2023-12-03,C0257,Electronics,Laptop X,1783.31,1,Failed
+100402,2023-11-29,C0022,Electronics,Laptop X,1456.95,2,Paid
+100699,06/12/2023,C0057, Accessories,Screen Protector,"6,05 EUR",1,Paid
+100738,07/12/2023,C0138, Accessories,Charger,"34,63 EUR",1,Paid
+100439,2023-11-30,C0001,Smart Home,NordLock Pro,"216,05 EUR",1,Paid
+100528,02/12/2023,C0239, Accessories ,Wireless Mouse,"33,63 EUR",2,Paid
+100995,12/12/2023,C0041, Accessories,Accessory Bundle,"96,03 EUR",3,Paid
+100369,28/11/2023,C0006,Electronics,Laptop X,1403.95,1,Paid
+100877,2023-12-09,C0002,Smart Home,NordLock Pro,"218,56 EUR",1,Paid
+100718,2023-12-06,C0109, Smart Home ,NordLock Pro,$195.57,1,Failed
+100864,2023-12-09,C0001,Accessories,Laptop Sleeve,23,1,Paid
+100152,21/11/2023,C0056,Accessories,Laptop Sleeve,$19.03,1,Paid
+101171,06/12/2023,C0009,Smart Home,NordTherm,106.57,1,Failed
+100133,20/11/2023,C0001, Accessories ,USB-C Cable,$18.72,3,Paid
+100739,2023-12-07,C0061, Electronics ,Smartphone Z,$1073.23,1,Paid
+100030,2023-11-16,C0027,Accessories,USB-C Cable,$7.17,2,Paid
+100640,2023-12-04,C0257, Smart Home ,NordLock Pro,"224,35 EUR",1,Paid
+100941,11/12/2023,C0004,Accessories,USB-C Cable,16,1,Paid
+100239,2023-11-24,C0126,Accessories,USB-C Cable,"9,10 EUR",1,Paid
+100674,2023-12-05,C0002,Electronics,Laptop X,"1614,66 EUR",1,Paid
+101170,2023-11-17,C0157,Electronics ,Tablet A,479,1,Paid
+100774,2023-12-07,C0058, Smart Home ,NordLock Pro,248.12,1,Paid
+101010,2023-12-12,C0016, Accessories,Laptop Sleeve,15.70,3,Paid
+100324,2023-11-27,C0002,Accessories,Screen Protector,12.57,4,Paid
+100629,04/12/2023,C0002,Smart Home,NordTherm,"117,11 EUR",1,Paid
+101144,2023-12-03,C0012, Accessories ,Wireless Mouse,"51,21 EUR",1,Pending
+100855,2023-12-09,C0005,Electronics,NoiseCancel Headphones,190.71,1,Paid
+100770,07/12/2023,C0001,Accessories,Phone Case,27.76,1,Paid
+100746,2023-12-07,C0198,Smart Home,NordLock Pro,"235,60 EUR",1,Paid
+101165,2023-12-11,C0002,Accessories,Charger,"38,56 EUR",1,Paid
+101138,2023-11-28,C0237,Smart Home,NordLock Pro,$208.61,2,Paid
+100380,28/11/2023,C0031,Electronics,TV Pro,$1095.55,1,Paid
+100559,03/12/2023,C0001, Accessories,Wireless Mouse,35.34,3,Paid
+100516,2023-12-02,C0003,Accessories,Screen Protector,12,2,Paid
+100881,2023-12-09,C0267,Smart Home,NordLock Pro,"228,02 EUR",1,Paid
+100952,11/12/2023,C0001, Accessories,USB-C Cable,$13.80,2,Paid
+101008,12/12/2023,C0004,Smart Home,NordLock Pro,242.09,1,Paid
+100748,2023-12-07,C0002,Accessories,Accessory Bundle,$84.53,1,Paid
+100031,16/11/2023,C0001, Accessories,Charger,"44,80 EUR",1,Failed
+100667,2023-12-05,C0001,Accessories,Laptop Sleeve,"26,60 EUR",1,Paid
+101186,2023-12-12,C0001, Accessories ,USB-C Cable,13,3,Paid
+100351,2023-11-27,C0002,Electronics,Laptop X,$1494.48,1,Paid
+101172,22/11/2023,C0094,Smart Home,NordLock Pro,$221.01,1,Paid
+101036,2023-12-12,C0035,Accessories,Laptop Sleeve,28,1,Paid
+100792,2023-12-07,C0003,Smart Home,NordLock Pro,$246.21,1,Paid
+100052,17/11/2023,C0003, Accessories,Screen Protector,12.69,1,Paid
+100508,2023-12-01,C0001,Smart Home,NordLock Pro,$225.99,2,Pending
+100037,2023-11-16,C0055,Smart Home,NordLock Pro,"222,22 EUR",1,Paid
+100610,2023-12-04,C0004, Smart Home ,NordPlug,"32,97 EUR",2,Paid
+100079,18/11/2023,C0011, Accessories ,Laptop Sleeve,44,1,Paid
+100014,2023-11-15,C0115,Accessories,Charger,19.07,1,Paid
+100676,2023-12-05,C0025,Electronics,NoiseCancel Headphones,247,1,Failed
+100059,2023-11-17,C0157,Electronics ,Tablet A,479,1,Paid
+100576,03/12/2023,C0023,Electronics ,Smartphone Z,976.35,1,Paid
+100234,2023-11-24,C0003,Electronics,Tablet A,"525,74 EUR",1,Paid
+100744,2023-12-07,C0001,Smart Home,NordCam Mini,"58,18 EUR",1,Failed
+100479,2023-11-30,C0003,Accessories,Accessory Bundle,$92.28,1,Paid
+101000,12/12/2023,C0009,Smart Home,NordLock Pro,"191,58 EUR",1,Pending
+100194,2023-11-23,C0055,Electronics,TV Pro,"965,81 EUR",1,Pending
+100405,2023-11-29,C0204,Accessories,Phone Case,24,1,Paid
+100884,09/12/2023,C0009, Electronics ,TV Pro,1041.39,1,Paid
+100488,2023-12-01,C0003,Smart Home,NordTherm,"109,04 EUR",1,Paid
+100472,2023-11-30,C0009, Accessories ,Phone Case,26,1,Paid
+100257,2023-11-24,C0013, Accessories,Accessory Bundle,40.65,3,Paid
+100895,2023-12-10,C0014,Electronics ,Laptop X,1779,1,Paid
+101091,2023-12-14,C0001,Electronics,NoiseCancel Headphones,$158.87,1,Paid
+100139,21/11/2023,C0198,Electronics ,Smartphone Z,798.87,1,Paid
+100492,01/12/2023,C0025,Electronics,TV Pro,1384.66,1,Paid
+100579,2023-12-03,C0045, Accessories ,Accessory Bundle,86.12,2,Paid
+100707,2023-12-06,C0029, Accessories ,Wireless Mouse,41.44,1,Paid
+100207,2023-11-23,C0244,Electronics,Laptop X,"1 442,20 EUR",1,Paid
+100849,09/12/2023,C0026,Accessories,Laptop Sleeve,"17,69 EUR",1,Paid
+101179,2023-11-22,C0245,Accessories,USB-C Cable,"7,37 EUR",3,Paid
+100001,15/11/2023,C0001, Accessories ,Phone Case,$13.56,2,Paid
+100227,2023-11-24,C0015,Accessories,Screen Protector,"13,01 EUR",3,Paid
+100250,2023-11-24,C0057, Smart Home ,NordLock Pro,203.53,1,Paid
+100890,2023-12-09,C0001,Smart Home,NordPlug,"31,47 EUR",1,Paid
+100706,2023-12-06,C0010,Smart Home,NordLock Pro,$181.27,1,Paid
+100980,11/12/2023,C0145,Accessories,Screen Protector,"5,13 EUR",4,Paid
+101030,12/12/2023,C0005,Electronics,Laptop X,"1456,47 EUR",1,Paid
+100284,2023-11-25,C0001,Electronics,Tablet A,$671.18,1,Paid
+100314,2023-11-26,C0004, Smart Home ,NordCam Mini,$87.73,1,Paid
+100597,2023-12-04,C0176, Accessories,Phone Case,36.31,1,Paid
+100060,17/11/2023,C0048,Accessories,Phone Case,31.47,2,Paid
+100048,2023-11-17,C0068,Electronics,Laptop X,1571,1,Pending
+101122,2023-12-14,C0082,Electronics ,Smartphone Z,"700,68 EUR",1,Pending
+101080,13/12/2023,C0158, Accessories ,Accessory Bundle,61.58,1,Paid
+100987,11/12/2023,C0028,Smart Home,NordLock Pro,188,1,Paid
+100970,2023-12-11,C0001, Electronics ,NoiseCancel Headphones,164.02,1,Paid
+101157,2023-12-10,C0224, Accessories ,Accessory Bundle,47.39,1,Paid
+101145,2023-11-30,C0008,Electronics,Tablet A,$355.20,1,Paid
+100759,2023-12-07,C0004,Electronics,Smartphone Z,$1086.15,2,Paid
+100979,11/12/2023,C0003,Accessories,Phone Case,13.89,1,Paid
+101113,14/12/2023,C0074, Electronics ,Laptop X,"1 396,43 EUR",1,Paid
+100313,2023-11-26,C0003,Electronics,Smartphone Z,955.30,1,Paid
+100092,18/11/2023,C0001, Electronics ,TV Pro,$1264.20,1,Paid
+100722,2023-12-06,C0007, Accessories,USB-C Cable,12.52,4,Paid
+100735,2023-12-06,C0001,Electronics,NoiseCancel Headphones,"206,95 EUR",1,Paid
+100812,2023-12-08,C0006,Electronics,Tablet A,$470.11,2,Paid
+100460,2023-11-30,C0002,Electronics,Smartphone Z,"1 062,04 EUR",1,Paid
+101125,2023-12-14,C0023, Smart Home ,NordLock Pro,226.29,1,Paid
+100850,2023-12-09,C0005, Accessories ,Screen Protector,"6,80 EUR",2,Paid
+100384,2023-11-28,C0051,Electronics ,Tablet A,770,1,Paid
+100018,2023-11-15,C0009, Accessories,Wireless Mouse,57.97,1,Paid
+100956,11/12/2023,C0014, Electronics ,Tablet A,"743,70 EUR",1,Paid
+101077,2023-12-13,C0001, Accessories ,Charger,46.12,2,Paid
+101067,13/12/2023,C0003, Accessories,Charger,$26.56,4,Paid
+100988,2023-12-11,C0001,Electronics ,Smartphone Z,883,1,Paid
+101015,12/12/2023,C0001,Smart Home,NordLock Pro,$232.09,1,Paid
+101161,23/11/2023,C0063,Electronics,Smartphone Z,1077.99,1,Paid
+101135,14/12/2023,C0004,Smart Home,NordCam Mini,"79,06 EUR",2,Pending
+100126,2023-11-20,C0023,Electronics ,Tablet A,"511,14 EUR",1,Paid
+100512,2023-12-01,C0042,Electronics,TV Pro,1179,1,Paid
+100077,2023-11-18,C0004,Accessories,Wireless Mouse,57.30,1,Paid
+100931,11/12/2023,C0049,Electronics,Tablet A,"554,07 EUR",1,Paid
+100142,21/11/2023,C0004,Electronics,Tablet A,"599,07 EUR",1,Paid
+100586,03/12/2023,C0001,Electronics,Smartphone Z,"860,95 EUR",1,Failed
+100819,2023-12-08,C0087,Smart Home,NordPlug,17.09,1,Paid
+101162,2023-11-20,C0271,Electronics,Laptop X,"1 394,09 EUR",1,Paid
+100788,07/12/2023,C0151,Accessories,USB-C Cable,"8,71 EUR",2,Paid
+100556,2023-12-03,C0005,Electronics,Laptop X,1382.75,1,Paid
+101057,2023-12-13,C0004,Smart Home,NordLock Pro,"223,76 EUR",1,Paid
+100016,2023-11-15,C0023,Electronics,TV Pro,"1449,46 EUR",1,Paid
+100436,2023-11-30,C0001,Electronics ,Smartphone Z,759.36,1,Failed
+100499,2023-12-01,C0068,Electronics,Tablet A,"461,35 EUR",1,Paid
+100620,04/12/2023,C0013, Accessories ,Charger,$30.37,2,Pending
+100451,2023-11-30,C0001,Electronics,Laptop X,"1369,47 EUR",1,Failed
+100767,2023-12-07,C0028, Accessories,Phone Case,"11,57 EUR",4,Paid
+100036,2023-11-16,C0063,Accessories,Laptop Sleeve,"26,31 EUR",1,Pending
+100948,2023-12-11,C0013,Electronics,Tablet A,635,1,Paid
+100982,2023-12-11,C0009,Electronics,Tablet A,646,1,Paid
+100242,2023-11-24,C0276, Smart Home ,NordLock Pro,205.21,1,Paid
+100530,2023-12-02,C0005,Accessories,USB-C Cable,18.78,1,Paid
+100344,2023-11-27,C0013,Electronics,Tablet A,$691.81,1,Paid
+100887,09/12/2023,C0001,Accessories,USB-C Cable,14,1,Paid
+100507,2023-12-01,C0196,Electronics,Tablet A,"376,91 EUR",1,Paid
+101190,2023-11-27,C0001, Accessories ,Phone Case,"12,21 EUR",2,Paid
+100216,2023-11-23,C0006,Smart Home,NordLock Pro,218.70,1,Paid
+100209,2023-11-23,C0007, Accessories ,USB-C Cable,$13.23,1,Paid
+100946,2023-12-11,C0052, Accessories,USB-C Cable,16.38,1,Paid
+100065,2023-11-17,C0039,Accessories,Phone Case,$30.02,2,Paid
+100011,2023-11-15,C0002,Electronics,Laptop X,1491.63,1,Paid
+100253,2023-11-24,C0294,Accessories,Wireless Mouse,"25,96 EUR",1,Paid
+100604,2023-12-04,C0001,Electronics,Tablet A,327.65,1,Paid
+100806,08/12/2023,C0001,Electronics ,NoiseCancel Headphones,$333.30,1,Paid
+100315,2023-11-26,C0001,Smart Home,NordLock Pro,"247,46 EUR",1,Paid
+100519,02/12/2023,C0001,Accessories,USB-C Cable,"9,35 EUR",3,Paid
+100466,2023-11-30,C0002,Electronics,Smartphone Z,"916,13 EUR",1,Paid
+100932,2023-12-11,C0132,Accessories,USB-C Cable,"7,40 EUR",3,Paid
+100964,11/12/2023,C0003, Smart Home ,NordLock Pro,227.48,1,Paid
+100843,08/12/2023,C0006,Accessories,Accessory Bundle,27.11,1,Paid
+100368,2023-11-28,C0029,Smart Home,NordLock Pro,"231,33 EUR",1,Paid
+100146,21/11/2023,C0001,Accessories,Screen Protector,"12,09 EUR",1,Paid
+100363,2023-11-28,C0020,Electronics ,NoiseCancel Headphones,$263.87,1,Paid
+100631,2023-12-04,C0002,Electronics,NoiseCancel Headphones,328,1,Paid
+100091,18/11/2023,C0001, Accessories,Laptop Sleeve,"16,45 EUR",3,Paid
+100322,2023-11-27,C0011,Electronics,Laptop X,$1704.39,1,Paid
+100186,22/11/2023,C0041,Electronics,NoiseCancel Headphones,"191,23 EUR",1,Paid
+100925,2023-12-10,C0003, Accessories ,Wireless Mouse,51.07,1,Pending
+100869,09/12/2023,C0056,Smart Home,NordLock Pro,"192,27 EUR",1,Paid
+100757,07/12/2023,C0047,Electronics ,NoiseCancel Headphones,"229,65 EUR",2,Paid
+100120,19/11/2023,C0138,Electronics,Tablet A,"374,99 EUR",1,Paid
+101063,2023-12-13,C0037,Accessories,Charger,36,4,Paid
+100841,08/12/2023,C0016,Smart Home,NordLock Pro,224.32,1,Paid
+100494,01/12/2023,C0059,Accessories,Wireless Mouse,"46,58 EUR",1,Paid
+100444,2023-11-30,C0001,Accessories,Wireless Mouse,49.02,1,Paid
+100339,27/11/2023,C0002,Smart Home,NordTherm,142.29,2,Paid
+101109,2023-12-14,C0183, Smart Home ,NordLock Pro,228.56,1,Paid
+100225,2023-11-24,C0240,Accessories,Screen Protector,14.17,2,Paid
+100020,2023-11-15,C0001, Electronics ,Laptop X,$1645.89,1,Paid
+101097,14/12/2023,C0276, Accessories ,Phone Case,$22.51,1,Paid
+100419,29/11/2023,C0002,Electronics,Laptop X,"1724,19 EUR",1,Paid
+101100,2023-12-14,C0007, Accessories ,Charger,19.64,1,Paid
+100992,12/12/2023,C0001,Accessories,Wireless Mouse,50.82,1,Paid
+100386,28/11/2023,C0069,Smart Home,NordPlug,"21,62 EUR",1,Paid
+100930,2023-12-10,C0037,Accessories,Phone Case,"30,63 EUR",1,Paid
+100453,2023-11-30,C0005, Electronics ,NoiseCancel Headphones,247.94,1,Paid
+100265,2023-11-25,C0001,Electronics,Tablet A,662.20,1,Paid
+101065,2023-12-13,C0001,Smart Home,NordLock Pro,"237,74 EUR",1,Paid
+100161,21/11/2023,C0318,Electronics ,Smartphone Z,$852.83,1,Paid
+100111,2023-11-19,C0188,Electronics,NoiseCancel Headphones,298,1,Paid
+100304,26/11/2023,C0008, Electronics ,Laptop X,"1545,42 EUR",1,Paid
+100049,17/11/2023,C0003,Accessories,Laptop Sleeve,$24.43,1,Paid
+100510,01/12/2023,C0001,Accessories,Laptop Sleeve,"30,16 EUR",2,Paid
+100019,2023-11-15,C0034,Smart Home,NordLock Pro,"181,24 EUR",2,Paid
+101068,2023-12-13,C0052,Electronics ,Laptop X,"1467,19 EUR",1,Paid
+100935,11/12/2023,C0002,Accessories,USB-C Cable,$15.08,1,Paid
+101115,2023-12-14,C0307, Electronics ,NoiseCancel Headphones,$222.14,1,Paid
+100886,09/12/2023,C0016,Accessories,Screen Protector,$6.71,3,Paid
+100276,25/11/2023,C0098, Accessories,Wireless Mouse,"47,71 EUR",2,Paid
+100115,19/11/2023,C0005,Accessories,Screen Protector,9.78,3,Paid
+100728,2023-12-06,C0052,Smart Home,NordLock Pro,209.66,1,Paid
+101156,2023-11-24,C0002,Electronics,Tablet A,386.12,1,Paid
+100002,2023-11-15,C0002,Electronics,Tablet A,"488,25 EUR",1,Paid
+100228,2023-11-24,C0147,Electronics,Smartphone Z,1055.64,1,Paid
+100134,20/11/2023,C0001,Electronics ,Smartphone Z,"970,64 EUR",1,Pending
+100249,24/11/2023,C0060, Electronics ,NoiseCancel Headphones,315.48,1,Paid
+100497,01/12/2023,C0224, Electronics ,TV Pro,1627.15,1,Paid
+100961,2023-12-11,C0003,Electronics,Smartphone Z,"832,85 EUR",1,Paid
+100336,2023-11-27,C0002, Accessories ,Charger,22.85,4,Paid
+100440,30/11/2023,C0012,Accessories,USB-C Cable,$12.61,1,Paid
+101167,2023-12-11,C0001,Electronics ,TV Pro,$969.19,1,Paid
+100813,2023-12-08,C0010, Electronics ,NoiseCancel Headphones,$150.46,2,Paid
+101052,13/12/2023,C0137,Accessories,Screen Protector,10.44,1,Paid
+100442,2023-11-30,C0001,Electronics,NoiseCancel Headphones,"153,00 EUR",2,Paid
+101163,07/12/2023,C0047,Electronics,Smartphone Z,712.48,1,Paid
+101114,14/12/2023,C0002,Accessories,Laptop Sleeve,32.82,1,Paid
+100839,08/12/2023,C0011, Accessories,Phone Case,"24,43 EUR",1,Paid
+101048,2023-12-13,C0014, Smart Home ,NordLock Pro,183.01,1,Paid
+101104,2023-12-14,C0013,Accessories,Accessory Bundle,"83,54 EUR",1,Paid
+101150,12/12/2023,C0040,Smart Home,NordLock Pro,185.28,2,Paid
+100243,2023-11-24,C0026,Electronics ,Laptop X,$1554.67,1,Paid
+100684,2023-12-05,C0001, Electronics ,Tablet A,587.10,1,Paid
+100658,2023-12-05,C0002,Electronics ,NoiseCancel Headphones,"151,84 EUR",1,Paid
+100505,2023-12-01,C0007, Electronics ,TV Pro,$1619.06,1,Paid
+100409,2023-11-29,C0001,Smart Home,NordPlug,21,1,Paid
+101199,24/11/2023,C0001, Electronics ,NoiseCancel Headphones,"182,17 EUR",2,Paid
+101106,2023-12-14,C0008, Electronics ,Tablet A,"635,65 EUR",1,Paid
+101062,2023-12-13,C0019,Electronics,Smartphone Z,"799,82 EUR",1,Failed
+100141,2023-11-21,C0007, Accessories,Phone Case,$23.73,1,Paid
+100547,2023-12-02,C0038, Accessories ,Charger,"24,90 EUR",2,Paid
+100901,10/12/2023,C0036,Accessories,Phone Case,"23,08 EUR",3,Paid
+100638,04/12/2023,C0005, Accessories,Phone Case,"19,42 EUR",1,Paid
+100689,2023-12-06,C0166,Electronics,Smartphone Z,$963.43,1,Paid
+100622,04/12/2023,C0135,Accessories,Accessory Bundle,66.41,2,Paid
+100851,2023-12-09,C0022, Accessories,USB-C Cable,"15,85 EUR",3,Pending
+100584,2023-12-03,C0013,Electronics ,Tablet A,"524,49 EUR",2,Paid
+100333,2023-11-27,C0165,Smart Home,NordTherm,83.95,1,Failed
+101116,2023-12-14,C0002,Accessories,Screen Protector,9.56,1,Paid
+101105,2023-12-14,C0218,Smart Home,NordLock Pro,$221.88,1,Paid
