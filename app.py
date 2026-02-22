@@ -70,12 +70,6 @@ df["has_return"] = df["Return_ID"].notna()
 # ticket_count kā skaitlis
 df["ticket_count"] = pd.to_numeric(df["ticket_count"], errors="coerce").fillna(0).astype(int)
 
-# DEBUG (tagad vairs nekritīs)
-st.write("ROWS:", len(df))
-st.write("Total Revenue:", float(df["Revenue"].sum()))
-st.write("Returns count:", int(df["has_return"].sum()))
-st.write("Tickets sum:", int(df["ticket_count"].sum()))
-
 # Sidebar filtri
 st.sidebar.header("Filtri")
 
