@@ -380,6 +380,14 @@ top_cases["Risk_Level"] = np.where(
     np.where(top_cases["return_rate"] > 5, "🟡 Medium", "🟢 Low")
 )
 
+top_cases = top_cases.rename(columns={
+    "Product_Category_clean": "Category",
+    "Product_Name_clean": "Product"
+})
+
+cols = ["Risk_Level"] + [c for c in top_cases.columns if c != "Risk_Level"]
+top_cases = top_cases[cols]
+
 st.dataframe(top_cases, use_container_width=True)
 
 st.caption("Padoms: pamēģini atlasīt tikai 'Smart Home' un šaurāku periodu, lai redzētu, vai problēmas koncentrējas laikā.")
