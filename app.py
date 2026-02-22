@@ -56,8 +56,21 @@ st.title("NordTech – Sales, Returns & Support Signals")
 
 DATA_PATH = "enriched_data.csv"
 df = pd.read_csv(DATA_PATH)
+
+# Datums
 df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
 
+# Revenue (obligāti PIRMS jebkādiem aprēķiniem / debug)
+df["Revenue"] = pd.to_numeric(df["Price"], errors="coerce") * pd.to_numeric(df["Quantity"], errors="coerce")
+df["Revenue"] = df["Revenue"].fillna(0)
+
+# has_return no Return_ID (enriched failā nav has_return)
+df["has_return"] = df["Return_ID"].notna()
+
+# ticket_count kā skaitlis
+df["ticket_count"] = pd.to_numeric(df["ticket_count"], errors="coerce").fillna(0).astype(int)
+
+# DEBUG (tagad vairs nekritīs)
 st.write("ROWS:", len(df))
 st.write("Total Revenue:", float(df["Revenue"].sum()))
 st.write("Returns count:", int(df["has_return"].sum()))
