@@ -322,6 +322,32 @@ seg = (f.groupby("Product_Category_clean")
 seg["return_rate"] = np.where(seg["orders"] > 0, seg["returns"] / seg["orders"] * 100, 0)
 seg = seg.sort_values("return_rate", ascending=False)
 
+st.subheader("Siltumkarte pa mēnešiem (heatmap)")
+
+m = monthly.copy()
+m["Year"] = m["month"].dt.year
+m["Month"] = m["month"].dt.strftime("%b")
+
+# izvēlies ko rādīt: "revenue" vai "return_rate"
+metric_choice = st.radio("Ko rādīt heatmap?", ["Revenue", "Return rate %"], horizontal=True)
+
+if metric_choice == "Revenue":
+    value_col = "revenue"
+    z_title = "Ieņēmumi"
+else:
+    value_col = "return_rate"
+    z_title = "Atgriezumu %"
+
+pivot = m.pivot_table(index="Year", columns="Month", values=value_col, aggfunc="sum")
+
+fig_heat = px.imshow(
+    pivot,
+    aspect="auto",
+    title=f"Heatmap: {z_title} pa mēnešiem",
+)
+
+st.plotly_chart(fig_heat, use_container_width=True)
+
 st.plotly_chart(
     px.bar(seg, x="Product_Category_clean", y="return_rate",
            hover_data=["orders","returns","revenue","avg_tickets"],
