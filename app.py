@@ -242,7 +242,20 @@ time = (
 time["return_rate"] = np.where(time["orders"] > 0, time["returns"] / time["orders"] * 100, 0)
 
 c1, c2 = st.columns(2)
-c1.plotly_chart(px.line(time, x="Date", y="revenue", title="Ieņēmumi pa nedēļām"), use_container_width=True)
+fig_revenue = px.line(
+    time,
+    x="Date",
+    y="revenue",
+    title="Ieņēmumi pa nedēļām",
+    hover_data={
+        "revenue": ":,.0f",
+        "orders": True,
+        "returns": True,
+        "tickets": True
+    }
+)
+
+c1.plotly_chart(fig_revenue, use_container_width=True)
 c2.plotly_chart(px.line(time, x="Date", y="return_rate", title="Atgriezumu īpatsvars (%) pa nedēļām"), use_container_width=True)
 
 st.subheader("Segmentācija")
