@@ -57,6 +57,13 @@ st.title("NordTech – Sales, Returns & Support Signals")
 DATA_PATH = "enriched_data.csv"
 df = pd.read_csv(DATA_PATH)
 
+df["Product_Category_clean"] = (
+    df["Product_Category"]
+      .astype(str)
+      .str.strip()
+      .str.replace(r"\s+", " ", regex=True)
+)
+
 # Datums
 df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
 
@@ -137,7 +144,7 @@ selected_payments = st.sidebar.multiselect(
 
 f = df.copy()
 if selected_categories:
-    f = f[f["Product_Category"].isin(selected_categories)]
+    f = f[f["Product_Category_clean"].isin(selected_categories)]
 
 if selected_products:
     f = f[f["Product_Name"].isin(selected_products)]
@@ -217,7 +224,7 @@ c1.plotly_chart(px.line(time, x="Date", y="revenue", title="Ieņēmumi pa nedē�
 c2.plotly_chart(px.line(time, x="Date", y="return_rate", title="Atgriezumu īpatsvars (%) pa nedēļām"), use_container_width=True)
 
 st.subheader("Segmentācija")
-seg = (f.groupby("Product_Category")
+seg = (f.groupby("Product_Category_clean")
         .agg(
             orders=("Transaction_ID","count"),
             returns=("has_return","sum"),
@@ -229,7 +236,7 @@ seg["return_rate"] = np.where(seg["orders"] > 0, seg["returns"] / seg["orders"] 
 seg = seg.sort_values("return_rate", ascending=False)
 
 st.plotly_chart(
-    px.bar(seg, x="Product_Category", y="return_rate",
+    px.bar(seg, x="Product_Category_clean", y="return_rate",
            hover_data=["orders","returns","revenue","avg_tickets"],
            title="Atgriezumu % pa produktu kategorijām"),
     use_container_width=True
