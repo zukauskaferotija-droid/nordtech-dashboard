@@ -6,23 +6,65 @@ import plotly.express as px
 st.set_page_config(page_title="NordTech Dashboard", layout="wide")
 
 @st.cache_data
-def load_data(path: str) -> pd.DataFrame:
-    df = pd.read_csv(path)
-    df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
-    df["Revenue"] = df["Price"] * df["Quantity"]
-    df["has_return"] = df["Return_ID"].notna()
+def load_data(orders_path: str, returns_path: str | None = None) -> pd.DataFrame:
+    # --- Orders ---
+    df = pd.read_csv(orders_path)
 
-    # ja kādā rindā trūkst signālu
-    for col, default in [("ticket_count", 0), ("negative_tickets", 0), ("top_topic", "no_tickets")]:
-        if col not in df.columns:
-            df[col] = default
+    # Normalizē kolonnu nosaukumus (noņem liekās atstarpes)
+    df.columns = [c.strip() for c in df.columns]
 
-    return df
+    # Droši datuma lauks (ja tāds ir)
+    if "Date" in df.columns:
+        df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+
+    # Revenue = Price * Quantity (ja abi ir)
+    if "Price" in df.columns and "Quantity" in df.columns:
+        df["Revenue"] = pd.to_numeric(df["Price"], errors="coerce") * pd.to_numeric(df["Quantity"], errors="coerce")
+    else:
+        df["Revenue"] = np.nan
+
+    # --- Return flag (droši) ---
+    # 1) Mēģini atrast Return_ID vai līdzīgu kolonnu orders failā
+    possible_return_cols = [
+        "Return_ID", "ReturnID", "return_id", "returnid", "Return Id", "ReturnId"
+    ]
+    return_col = next((c for c in possible_return_cols if c in df.columns), None)
+
+    if return_col is not None:
+        df["has_return"] = df[return_col].notna()
+        return df
+
+    # 2) Ja orders failā nav Return_ID, pamēģini izveidot no returns faila (Excel)
+    df["has_return"] = False  # default
+
+    if returns_path is None:
+        return df
+
+    try:
+        ret = pd.read_excel(returns_path)
+        ret.columns = [c.strip() for c in ret.columns]
+
+        # Meklē kopīgo atslēgu, ar ko savienot (biežākie varianti)
+        order_key_candidates = ["Order_ID", "OrderID", "order_id", "Order Id", "OrderId"]
+        ret_key_candidates   = ["Order_ID", "OrderID", "order_id", "Order Id", "OrderId"]
+
+        orders_key = next((c for c in order_key_candidates if c in df.columns), None)
+        ret_key    = next((c for c in ret_key_candidates if c in ret.columns), None)
+
+        if orders_key and ret_key:
+            returned_orders = set(ret[ret_key].dropna().astype(str))
+            df["has_return"] = df[orders_key].astype(str).isin(returned_orders)
+
+        return df
+
+    except Exception:
+        return df
 
 st.title("NordTech – Sales, Returns & Support Signals")
 
 DATA_PATH = "orders_raw.csv"
-df = load_data(DATA_PATH)
+RETURNS_PATH = "returns_messy.xlsx"
+df = load_data(DATA_PATH, RETURNS_PATH)
 
 # Sidebar filtri
 st.sidebar.header("Filtri")
