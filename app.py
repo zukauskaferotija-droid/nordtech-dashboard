@@ -220,17 +220,41 @@ monthly = monthly.sort_values("month")
 monthly["revenue_mom_pct"] = monthly["revenue"].pct_change() * 100
 monthly["return_rate_mom_pct"] = monthly["return_rate"].pct_change() * 100
 
-# KPI
-total_revenue = f["Revenue"].sum()
-return_rate = (f["has_return"].mean() * 100) if len(f) else 0
+# ===== KPI ar trendiem =====
+total_revenue = float(f["Revenue"].sum())
+return_rate = (float(f["has_return"].mean()) * 100) if len(f) else 0
 returns_count = int(f["has_return"].sum())
 tickets_total = int(f["ticket_count"].sum())
 
+# Paņem pēdējo mēnesi un iepriekšējo mēnesi (ja ir)
+last_mom_rev = monthly["revenue_mom_pct"].iloc[-1] if len(monthly) >= 2 else np.nan
+last_mom_ret = monthly["return_rate_mom_pct"].iloc[-1] if len(monthly) >= 2 else np.nan
+
+def trend_arrow(x):
+    if pd.isna(x): 
+        return ""
+    return "↑" if x > 0 else ("↓" if x < 0 else "→")
+
 k1, k2, k3, k4 = st.columns(4)
-k1.metric("💰 Kopējie ieņēmumi", f"{total_revenue:,.0f} €")
-k2.metric("📦 Atgriezumu īpatsvars", f"{return_rate:.2f}%")
+
+k1.metric(
+    "💰 Kopējie ieņēmumi",
+    f"{total_revenue:,.2f}",
+    delta=(f"{trend_arrow(last_mom_rev)} {last_mom_rev:.1f}% MoM" if not pd.isna(last_mom_rev) else None)
+)
+
+# Atgriezumu % — šeit “↓” ir labi (uzlabojums), tāpēc delta_color="inverse"
+k2.metric(
+    "📦 Atgriezumu %",
+    f"{return_rate:.2f}%",
+    delta=(f"{trend_arrow(last_mom_ret)} {last_mom_ret:.1f}% MoM" if not pd.isna(last_mom_ret) else None),
+    delta_color="inverse"
+)
+
 k3.metric("↩️ Atgriezumu skaits", f"{returns_count:,}")
-k4.metric("🎧 Klientu sūdzības", f"{tickets_total:,}")
+k4.metric("🎧 Sūdzību skaits", f"{tickets_total:,}")
+
+st.divider()
 
 if return_rate > 7:
     st.warning("⚠️ Atgriezumu līmenis pārsniedz 7% — nepieciešama produktu kvalitātes analīze.")
