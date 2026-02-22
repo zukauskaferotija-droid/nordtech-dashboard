@@ -111,28 +111,28 @@ with st.sidebar.expander("🔎 Filtri", expanded=True):
 
     # --- Product Name atkarīgs no kategorijas ---
     if selected_categories:
-    available_products = (
-        df[df["Product_Category_clean"].isin(selected_categories)]
-        ["Product_Name_clean"]
-        .dropna()
-        .unique()
-        .tolist()
-    )
+        available_products = (
+            df[df["Product_Category_clean"].isin(selected_categories)]
+            ["Product_Name_clean"]
+            .dropna()
+            .unique()
+            .tolist()
+        )
     else:
-    available_products = (
-        df["Product_Name_clean"]
-        .dropna()
-        .unique()
-        .tolist()
-    )
+        available_products = (
+            df["Product_Name_clean"]
+            .dropna()
+            .unique()
+            .tolist()
+        )
 
     available_products = sorted(available_products)
 
     selected_products = st.sidebar.multiselect(
-    "Produkts",
-    options=available_products,
-    default=[],
-    key="product_filter"
+        "Produkts",
+        options=available_products,
+        default=[],
+        key="product_filter"
     )
 
     min_date = df["Date"].min()
