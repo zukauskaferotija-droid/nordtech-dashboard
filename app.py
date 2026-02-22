@@ -254,6 +254,13 @@ k2.metric(
 k3.metric("↩️ Atgriezumu skaits", f"{returns_count:,}")
 k4.metric("🎧 Sūdzību skaits", f"{tickets_total:,}")
 
+st.download_button(
+    label="⬇️ Lejupielādēt filtrētos datus (CSV)",
+    data=f.to_csv(index=False).encode("utf-8"),
+    file_name="nordtech_filtered.csv",
+    mime="text/csv"
+)
+
 st.divider()
 
 if return_rate > 7:
@@ -347,6 +354,35 @@ fig_heat = px.imshow(
 )
 
 st.plotly_chart(fig_heat, use_container_width=True)
+
+st.subheader("Ieņēmumi vs atgriezumi: korelācija")
+
+scatter_df = (
+    f.dropna(subset=["Date"])
+     .assign(month=f["Date"].dt.to_period("M").dt.to_timestamp())
+     .groupby("month")
+     .agg(
+         revenue=("Revenue", "sum"),
+         return_rate=("has_return", "mean"),
+         orders=("Transaction_ID", "count"),
+         returns=("has_return", "sum"),
+         tickets=("ticket_count", "sum"),
+     )
+     .reset_index()
+)
+
+scatter_df["return_rate"] = scatter_df["return_rate"] * 100
+
+fig_scatter = px.scatter(
+    scatter_df,
+    x="revenue",
+    y="return_rate",
+    size="orders",
+    hover_data=["month", "orders", "returns", "tickets"],
+    title="Vai lielāki ieņēmumi saistās ar lielākiem atgriezumiem?"
+)
+
+st.plotly_chart(fig_scatter, use_container_width=True)
 
 st.plotly_chart(
     px.bar(seg, x="Product_Category_clean", y="return_rate",
