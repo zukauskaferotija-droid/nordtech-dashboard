@@ -31,6 +31,10 @@ def load_data(orders_path: str, returns_path: str | None = None) -> pd.DataFrame
         ret = pd.read_excel(returns_path)
         ret.columns = [c.strip() for c in ret.columns]
 
+        st.write("RETURNS columns:", ret.columns.tolist())
+st.write("ORDERS columns:", df.columns.tolist())
+st.write("RETURNS sample:", ret.head(3))
+
         order_key_candidates = [
             "Transaction_ID", "TransactionID", "transaction_id",
             "Order_ID", "OrderID", "order_id"
