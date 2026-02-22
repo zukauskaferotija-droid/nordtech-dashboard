@@ -91,6 +91,26 @@ if selected_categories:
         .tolist()
     )
 
+# --- Product Name atkarīgs no kategorijas ---
+if selected_categories:
+    available_products = (
+        df[df["Product_Category"].isin(selected_categories)]["Product_Name"]
+        .dropna()
+        .unique()
+        .tolist()
+    )
+else:
+    available_products = df["Product_Name"].dropna().unique().tolist()
+
+available_products = sorted(available_products)
+
+selected_products = st.sidebar.multiselect(
+    "Produkts",
+    options=available_products,
+    default=available_products,
+    key="product_filter"
+)
+
 min_date = df["Date"].min()
 max_date = df["Date"].max()
 date_range = st.sidebar.date_input(
