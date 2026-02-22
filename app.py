@@ -51,6 +51,8 @@ DATA_PATH = "orders_raw.csv"
 RETURNS_PATH = "returns_messy.xlsx"
 df = load_data(DATA_PATH, RETURNS_PATH)
 
+st.write("Tickets rows:", len(pd.read_json("customer_tickets.jsonl", lines=True)))
+
 TICKETS_PATH = "customer_tickets.jsonl"
 
 @st.cache_data
