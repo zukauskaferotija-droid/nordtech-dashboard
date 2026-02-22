@@ -66,6 +66,12 @@ DATA_PATH = "orders_raw.csv"
 RETURNS_PATH = "returns_messy.xlsx"
 df = load_data(DATA_PATH, RETURNS_PATH)
 
+st.write("Rows:", len(df))
+st.write("Columns:", df.columns.tolist())
+
+st.write("has_return True count:", int(df["has_return"].sum()) if "has_return" in df.columns else "NO has_return col")
+st.write("ticket_count sum:", int(df["ticket_count"].sum()) if "ticket_count" in df.columns else "NO ticket_count col")
+
 # Sidebar filtri
 st.sidebar.header("Filtri")
 
