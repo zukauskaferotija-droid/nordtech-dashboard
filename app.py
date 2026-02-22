@@ -80,6 +80,26 @@ selected_categories = st.sidebar.multiselect(
     default=all_categories
 )
 
+# --- Product Name atkarīgs no kategorijas ---
+if selected_categories:
+    available_products = (
+        df[df["Product_Category"].isin(selected_categories)]
+        ["Product_Name"]
+        .dropna()
+        .unique()
+        .tolist()
+    )
+else:
+    available_products = df["Product_Name"].dropna().unique().tolist()
+
+available_products = sorted(available_products)
+
+selected_products = st.sidebar.multiselect(
+    "Produkts",
+    options=available_products,
+    default=available_products
+)
+
 min_date = df["Date"].min()
 max_date = df["Date"].max()
 date_range = st.sidebar.date_input(
@@ -98,6 +118,20 @@ selected_payments = st.sidebar.multiselect(
 f = df.copy()
 if selected_categories:
     f = f[f["Product_Category"].isin(selected_categories)]
+
+if selected_products:
+    f = f[f["Product_Name"].isin(selected_products)]
+    
+else:
+    available_products = df["Product_Name"].dropna().unique().tolist()
+
+available_products = sorted(available_products)
+
+selected_products = st.sidebar.multiselect(
+    "Produkts",
+    options=available_products,
+    default=available_products
+)
 
 if isinstance(date_range, (list, tuple)) and len(date_range) == 2:
     start_date = pd.to_datetime(date_range[0])
