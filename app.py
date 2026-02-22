@@ -102,6 +102,38 @@ if isinstance(date_range, (list, tuple)) and len(date_range) == 2:
 
 if selected_payments:
     f = f[f["Payment_Status"].isin(selected_payments)]
+    
+# --- SAFETY PATCH ---
+# sakārto kolonnu nosaukumus
+f.columns = [c.strip() for c in f.columns]
+
+# Date droši
+if "Date" in f.columns:
+    f["Date"] = pd.to_datetime(f["Date"], errors="coerce")
+
+# Revenue droši
+if "Revenue" not in f.columns:
+    if "Price" in f.columns and "Quantity" in f.columns:
+        f["Revenue"] = pd.to_numeric(f["Price"], errors="coerce") * pd.to_numeric(f["Quantity"], errors="coerce")
+    else:
+        f["Revenue"] = 0
+
+# has_return droši
+if "has_return" not in f.columns:
+    f["has_return"] = False
+
+# ticket_count droši
+if "ticket_count" not in f.columns:
+    f["ticket_count"] = 0
+
+# top_topic droši
+if "top_topic" not in f.columns:
+    f["top_topic"] = "n/a"
+
+# JA NAV Transaction_ID → izveido
+if "Transaction_ID" not in f.columns:
+    f["Transaction_ID"] = np.arange(len(f))
+# --- END SAFETY PATCH ---    
 
 # KPI
 total_revenue = f["Revenue"].sum()
