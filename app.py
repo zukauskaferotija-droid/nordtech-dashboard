@@ -119,16 +119,18 @@ st.divider()
 
 # Grafiki
 st.subheader("Dinamika laikā")
-time = (f.dropna(subset=["Date"])
-          .set_index("Date")
-          .resample("W")
-          .agg(
-              revenue=("Revenue","sum"),
-              orders=("Transaction_ID","count"),
-              returns=("has_return","sum"),
-              tickets=("ticket_count","sum")
-          )
-          .reset_index())
+time = (
+    f.assign(Date=pd.to_datetime(f["Date"], errors="coerce"))
+     .dropna(subset=["Date"])
+     .groupby(pd.Grouper(key="Date", freq="W"))
+     .agg(
+         revenue=("Revenue", "sum"),
+         orders=("Transaction_ID", "count"),
+         returns=("has_return", "sum"),
+         tickets=("ticket_count", "sum"),
+     )
+     .reset_index()
+)
 time["return_rate"] = np.where(time["orders"] > 0, time["returns"] / time["orders"] * 100, 0)
 
 c1, c2 = st.columns(2)
